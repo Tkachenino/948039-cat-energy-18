@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Максим Ткаченко](https://up.htmlacademy.ru/adaptive/18/user/948039).
-* Наставник: `Неизвестно`.
+* Наставник: `Дарья Клюхина`.
 
 ---
 
