@@ -23,7 +23,7 @@
     <h2 class="form__title">Подбор программы</h2>
     <p class="form__intro">Заполните анкету и мы подберем
       программу питания для вашего кота</p>
-    <form action="https://echo.htmlacademy.ru" method="get">
+    <form action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form__field">
         <ul class="form__list">
           <li class="form__item"><label class="form__value">Имя:*<input class="form__area" type="text" name="name" value="Барсик" placeholder="Имя котика" required></label></li>
@@ -33,9 +33,9 @@
       </fieldset>
       <fieldset class="form__field">
         <ul class="form__list">
-          <li class="form__item"><label class="form__value"><input class="form__area" type="checkbox" name="slim" checked>похудение</label></li>
-          <li class="form__item"><label class="form__value"><input class="form__area" type="checkbox" name="pro">набор массы</label></li>
-          <li class="form__item"><label class="form__value"><input class="form__area" type="checkbox" name="advance">не знаю (нужен ваш совет)</label></li>
+          <li class="form__item"><label class="form__value"><input class="form__area" type="radio" name="type-of-food" value="slim" checked>похудение</label></li>
+          <li class="form__item"><label class="form__value"><input class="form__area" type="radio" name="type-of-food" value="pro">набор массы</label></li>
+          <li class="form__item"><label class="form__value"><input class="form__area" type="radio" name="type-of-food" value="advance">не знаю (нужен ваш совет)</label></li>
         </ul>
       </fieldset>
       <fieldset class="form__field form__field--green-line">
@@ -58,7 +58,7 @@
           <li class="form__item"><label class="form__value"><input class="form__area" type="checkbox" name="vitamin">витамины</label></li>
         </ul>
       </fieldset>
-      <button class="button form__button" type="button">Отправить заявку</button>
+      <button class="button form__button" type="submit">Отправить заявку</button>
       <small class="form__text-little">* - Обязательные поля</small>
     </form>
   </section>
