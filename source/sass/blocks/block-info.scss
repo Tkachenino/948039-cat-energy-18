@@ -7,6 +7,7 @@
     font-weight: normal;
     padding-left: 91px;
     position: relative;
+
     &--slim::before {
       position: absolute;
       left: 0;
@@ -15,6 +16,7 @@
       height: 49px;
       background-image: url("../img/icon-cat-slim.svg");
     }
+
     &--pro::before {
       position: absolute;
       left: 0;
@@ -24,11 +26,13 @@
       background-image: url("../img/icon-cat-pro.svg");
     }
   }
+
   &__text {
     color: #444444;
     font-size: 14px;
     line-height: 18px;
   }
+
   &__button {
     text-decoration: none;
     color: #111111;
@@ -36,6 +40,7 @@
     font-size: 16px;
     line-height: 16px;
     position: relative;
+
     &::before {
       content: "";
       width: 240px;
@@ -45,6 +50,7 @@
       top: 0;
       left: 50%;
     }
+
     &::after {
       content: url("../img/icon-right-arrow-long.svg");
       width: 24px;
