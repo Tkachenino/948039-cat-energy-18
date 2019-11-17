@@ -1,0 +1,29 @@
+body {
+  background-color: #ffffff;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+@import "blocks/container";
+@import "blocks/page-header.scss";
+@import "blocks/site-list";
+@import "blocks/main-nav";
+@import "blocks/select";
+@import "blocks/button";
+@import "blocks/block-info";
+@import "blocks/content-section";
+@import "blocks/advantage";
+@import "blocks/page-footer";
+@import "blocks/social";
+@import "blocks/copyright";
+@import "blocks/assortment";
