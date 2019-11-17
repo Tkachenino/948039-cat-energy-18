@@ -1,8 +1,10 @@
+@import "../global/variables";
+
 .site-list {
   padding-left: 0;
 }
 
-&__item {
+.site-list__item {
   list-style-type: none;
   border-bottom: 1px solid $shadow-gray;
 
