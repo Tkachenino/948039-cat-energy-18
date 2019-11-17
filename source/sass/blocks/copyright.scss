@@ -1,9 +1,9 @@
 .copyright {
   display: flex;
+}
 
-  &__text {
-    color: #444444;
-    font-size: 16px;
-    line-height: 16px;
-  }
+.copyright__text {
+  color: $shadow-gray;
+  font-size: 16px;
+  line-height: 16px;
 }

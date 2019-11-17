@@ -1,11 +1,11 @@
 .social {
-  border-bottom: 1px solid #d9d9d9;
-  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid $shadow-gray;
+  border-top: 1px solid $shadow-gray;
+}
 
-  &__list {
-    display: flex;
-    justify-content: space-around;
-    padding-left: 0;
-    list-style-type: none;
-  }
+.social__list {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  list-style-type: none;
 }

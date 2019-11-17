@@ -1,17 +1,17 @@
 .select {
   text-align: center;
-  color: #ffffff;
-  background: url("../img/index-background-mobile1x.jpg") no-repeat, linear-gradient(to bottom, #63a73a 50%, #ffffff 50%);
+  color: $white;
+  background: url("../img/index-background-mobile1x.jpg") no-repeat, linear-gradient(to bottom, $green 50%, $white 50%);
+}
 
-  &__title {
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: normal;
-  }
+.select__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+}
 
-  &__slogan {
-    font-size: 14px;
-    line-height: 14px;
-    text-transform: uppercase;
-  }
+.select__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
 }
