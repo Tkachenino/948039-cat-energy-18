@@ -1,7 +1,7 @@
-@import "../global/variables";
-
 .copyright__link {
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .copyright__text {

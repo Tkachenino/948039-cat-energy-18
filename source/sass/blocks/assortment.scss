@@ -1,6 +1,5 @@
-@import "../global/variables";
-
 .assortment__header {
+  display: block;
   font-size: 36px;
   font-weight: normal;
   line-height: 60px;
@@ -13,7 +12,9 @@
 }
 
 .assortment__item {
-  margin: 1px;
+  border: 1px solid $gray;
+  border-collapse: collapse;
+  margin-top: -1px;
 }
 
 .assortment__title {
@@ -28,4 +29,25 @@
   font-weight: normal;
   line-height: 16px;
   color: $shadow-gray;
+  text-align: center;
+}
+
+.assortment__field {
+  text-align: center;
+}
+
+.assortment__all {
+  position: relative;
+  padding-top: 85px;
+}
+
+.assortment__all > .assortment__field::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon-plus.svg");
 }

@@ -1,0 +1,37 @@
+.example__content {
+  font-size: 14px;
+  line-height: 18px;
+  color: $shadow-gray;
+}
+
+.example__result {
+  display: flex;
+  justify-content: space-around;
+}
+
+.example__value {
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example__explain {
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  color: $shadow-gray;
+}
+
+.example__cost {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__range-text {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

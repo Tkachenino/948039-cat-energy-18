@@ -1,0 +1,12 @@
+.location__text {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  &--adress {
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: none;
+    color: $shadow-gray;
+  }
+}

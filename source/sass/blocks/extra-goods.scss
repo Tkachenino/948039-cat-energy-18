@@ -1,0 +1,28 @@
+.extra-goods__title {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.extra-goods__list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.extra-goods__name {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.extra-goods__product {
+  font-size: 14px;
+  line-height: 14px;
+  color: $shadow-gray;
+}
+
+.extra-goods__cost {
+  font-size: 14px;
+  line-height: 14px;
+  color: $shadow-gray;
+  text-transform: uppercase;
+}

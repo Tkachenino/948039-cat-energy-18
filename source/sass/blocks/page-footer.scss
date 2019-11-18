@@ -1,5 +1,8 @@
-@import "../global/variables";
-
 .page-footer {
   background-color: $gray;
+}
+
+.page-footer__logo {
+  width: 128px;
+  margin: 0 auto;
 }
