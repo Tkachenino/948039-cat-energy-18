@@ -2,6 +2,7 @@
 
 .block-info {
   background-color: $gray;
+  padding: 0 22px;
 }
 
 .block-info__title {
@@ -12,18 +13,29 @@
   padding-left: 91px;
   position: relative;
 
-  &--slim::before {
+  &::before {
     position: absolute;
     left: 0;
     content: "";
-    width: 35px;
-    height: 49px;
-    background-image: url("../img/icon-cat-slim.svg");
+    border-radius: 50%;
+    background-color: $green;
+    height: 50px;
+    width: 50px;
   }
 
-  &--pro::before {
+  &--slim::after {
     position: absolute;
-    left: 0;
+    left: 6px;
+    content: "";
+    width: 35px;
+    height: 49px;
+    background: url("../img/icon-cat-slim.svg") no-repeat;
+  }
+
+  &--pro::after {
+    position: absolute;
+    left: -10px;
+    top: 10px;
     content: "";
     width: 67px;
     height: 28px;
@@ -35,6 +47,7 @@
   color: $shadow-gray;
   font-size: 14px;
   line-height: 18px;
+  margin-top: 46px;
 }
 
 .block-info__button {
@@ -44,6 +57,7 @@
   font-size: 16px;
   line-height: 16px;
   position: relative;
+  padding-right: 35px;
 
   &::before {
     content: "";
@@ -52,7 +66,7 @@
     background-color: $shadow-gray;
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 15%;
   }
 
   &::after {
@@ -60,7 +74,7 @@
     width: 24px;
     height: 11px;
     position: absolute;
-    right: -30px;
+    right: 0;
     top: 50%;
     transform: translateY(-75%);
   }
