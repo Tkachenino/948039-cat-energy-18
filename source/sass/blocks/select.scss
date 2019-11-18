@@ -1,0 +1,19 @@
+@import "../global/variables";
+
+.select {
+  text-align: center;
+  color: $white;
+  background: url("../img/index-background-mobile1x.jpg") no-repeat, linear-gradient(to bottom, $green 50%, $white 50%);
+}
+
+.select__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+}
+
+.select__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}

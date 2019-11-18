@@ -1,0 +1,31 @@
+@import "../global/variables";
+
+.assortment__header {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 60px;
+  text-align: center;
+}
+
+.assortment__list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.assortment__item {
+  margin: 1px;
+}
+
+.assortment__title {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.assortment__info {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+  color: $shadow-gray;
+}
