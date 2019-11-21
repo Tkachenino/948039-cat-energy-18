@@ -1,4 +1,5 @@
 .example__content {
+  padding: 0 20px;
   font-size: 14px;
   line-height: 18px;
   color: $shadow-gray;
@@ -31,6 +32,7 @@
 }
 
 .example__range-text {
+  padding-bottom: 20px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;

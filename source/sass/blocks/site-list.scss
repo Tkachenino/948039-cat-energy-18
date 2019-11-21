@@ -1,11 +1,12 @@
 .site-list {
   padding-left: 0;
+  margin: 0;
 }
 
 .site-list__item {
   list-style-type: none;
   border-bottom: 1px solid $gray;
-  width: 320px;
+  width: 100%;
   height: 65px;
   box-sizing: border-box;
   display: flex;
