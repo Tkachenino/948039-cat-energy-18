@@ -1,6 +1,5 @@
-@import "../global/variables";
-
 .advantage__list {
+  margin: 0 20px;
   padding-left: 80px;
   list-style-type: none;
   position: relative;
@@ -13,34 +12,38 @@
     left: 0;
     width: 60px;
     height: 60px;
-    background-color: $green;
   }
 
   &--health::before {
     content: "";
     position: absolute;
     left: 0;
-    background: $green url("../img/advantage-leaf@1x.png") no-repeat;
+    background: $green url("../img/advantage-leaf@1x.png") center no-repeat;
   }
 
   &--solute::before {
     content: "";
     position: absolute;
     left: 0;
-    background: $green url("../img/advantage-powder@1x.png") no-repeat;
+    background: $green url("../img/advantage-powder@1x.png") center no-repeat;
   }
 
   &--time::before {
     content: "";
     position: absolute;
     left: 0;
-    background: $green url("../img/advantage-dining@1x.png") no-repeat;
+    background: $green url("../img/advantage-dining@1x.png") center no-repeat;
   }
 
   &--weight::before {
     content: "";
     position: absolute;
     left: 0;
-    background: $green url("../img/advantage-clock@1x.png") no-repeat;
+    background: $green url("../img/advantage-clock@1x.png") center no-repeat;
   }
+}
+
+.advantage__text {
+  min-height: 60px;
+  margin-bottom: 20px;
 }

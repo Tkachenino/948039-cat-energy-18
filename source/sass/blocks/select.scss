@@ -1,15 +1,15 @@
-@import "../global/variables";
-
 .select {
+  padding-top: 25px;
   text-align: center;
   color: $white;
-  background: url("../img/index-background-mobile1x.jpg") no-repeat, linear-gradient(to bottom, $green 50%, $white 50%);
+  background: url("../img/index-background-mobile1x.jpg") top center no-repeat, linear-gradient(to bottom, $green 50%, $white 50%);
 }
 
 .select__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
+  margin: 0;
 }
 
 .select__slogan {

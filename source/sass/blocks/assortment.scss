@@ -1,19 +1,27 @@
-@import "../global/variables";
-
 .assortment__header {
+  margin: 0;
+  padding: 20px;
   font-size: 36px;
   font-weight: normal;
   line-height: 60px;
-  text-align: center;
+  text-align: left;
 }
 
 .assortment__list {
+  margin: 0;
   padding-left: 0;
   list-style-type: none;
 }
 
 .assortment__item {
-  margin: 1px;
+  padding: 20px;
+  border: 1px solid $gray;
+  border-collapse: collapse;
+  margin-top: -1px;
+}
+
+.assortment__image {
+  margin: 0;
 }
 
 .assortment__title {
@@ -28,4 +36,28 @@
   font-weight: normal;
   line-height: 16px;
   color: $shadow-gray;
+  text-align: center;
+}
+
+.assortment__field {
+  text-align: center;
+}
+
+.assortment__all {
+  padding: 65px 20px 20px;
+  border: 1px solid $gray;
+  border-collapse: collapse;
+  margin-top: -1px;
+  position: relative;
+}
+
+.assortment__all > .assortment__field::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon-plus.svg");
 }

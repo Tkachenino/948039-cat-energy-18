@@ -1,0 +1,25 @@
+.location {
+  background-color: $gray;
+  margin: 0;
+}
+
+.location__text {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  &--adress {
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: none;
+    color: $shadow-gray;
+  }
+}
+
+iframe {
+  width: 100%;
+  height: 400px;
+
+  border: none;
+}

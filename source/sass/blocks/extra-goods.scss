@@ -1,0 +1,49 @@
+.extra-goods {
+  padding: 20px;
+}
+
+.extra-goods__title {
+  font-size: 24px;
+  line-height: 24px;
+  margin-top: 0;
+}
+
+.extra-goods__list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.extra-goods__item {
+  padding-top: 14px;
+  padding-bottom: 17px;
+  border-top: 1px solid rgba($black, 0.3);
+
+  &:last-child {
+    border-bottom: 1px solid rgba($black, 0.3);
+  }
+}
+
+.extra-goods__name {
+  margin: 0;
+  padding-bottom: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.extra-goods__product {
+  padding-bottom: 14px;
+  font-size: 14px;
+  line-height: 14px;
+  color: $shadow-gray;
+}
+
+.extra-goods__cost {
+  right: 0;
+  padding-bottom: 14px;
+  font-size: 14px;
+  line-height: 14px;
+  color: $shadow-gray;
+  text-transform: uppercase;
+}

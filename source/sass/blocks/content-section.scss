@@ -1,8 +1,17 @@
-@import "../global/variables";
+.content-section--gray {
+  background-color: $gray;
+}
+
+.example__picture {
+  padding: 0 20px;
+  text-align: center;
+}
 
 .content-section__title {
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: left;
   font-size: 36px;
   line-height: 60px;
-  color: $black;
   font-weight: normal;
 }
