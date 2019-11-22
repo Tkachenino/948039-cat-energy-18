@@ -1,5 +1,45 @@
 .page-header {
+  width: 320px;
+  margin: 0 auto;
+  min-height: 198px;
   background-color: $white;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
 }
+
+.page-header__logo {
+  box-sizing: border-box;
+  padding-top: 13px;
+  padding-left: 20px;
+  min-height: 65px;
+  align-self: flex-start;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding: 0 20px;
+    width: 768px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    min-height: 65px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .page-header__logo {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding: 0 62px;
+    width: 1440px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    min-height: 65px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+

@@ -1,9 +1,36 @@
 .main-nav {
   box-sizing: border-box;
   width: 100%;
+  position: relative;
 }
 
 .main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, -185%);
   border: none;
   background-color: transparent;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 510px;
+    margin-left: auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 510px;
+    margin-left: auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }
