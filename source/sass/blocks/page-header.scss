@@ -33,6 +33,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    position: absolute;
     padding: 0 62px;
     width: 1440px;
     box-sizing: border-box;
@@ -40,6 +41,7 @@
     min-height: 65px;
     flex-direction: row;
     justify-content: space-between;
+    background-color: transparent;
   }
 }
 
