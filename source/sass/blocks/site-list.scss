@@ -66,5 +66,9 @@
       border-top: none;
       margin-left: 0;
     }
+
+    & a {
+      color: $white;
+    }
   }
 }

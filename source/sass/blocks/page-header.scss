@@ -20,7 +20,6 @@
   .page-header {
     padding: 0 20px;
     width: 768px;
-    margin: 0 auto;
     box-sizing: border-box;
     min-height: 65px;
     flex-direction: row;
@@ -34,10 +33,11 @@
 @media (min-width: $desktop-width) {
   .page-header {
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 0 62px;
     width: 1440px;
     box-sizing: border-box;
-    margin: 0 auto;
     min-height: 65px;
     flex-direction: row;
     justify-content: space-between;
