@@ -75,23 +75,20 @@
 
 @media (min-width: $desktop-width) {
   .select {
-    min-height: 630px;
-    padding-top: 130px;
-    padding-left: 80px;
-    text-align: left;
-    color: black;
+    min-height: 647px;
     background: url("../img/index-background-desktop@1x.jpg") top 0 left 100% no-repeat, linear-gradient(to left, $green 50%, $white 50%);
   }
 
   .select__box {
-    width: 1220px;
-    margin: 0 auto;
+    width: 1300px;
+    margin: 50px auto 0;
+    padding: 0 120px;
+    box-sizing: border-box;
   }
 
   .select__title {
     width: 550px;
     margin: 0;
-    padding: 0 0 40px;
     font-size: 60px;
     line-height: 60px;
     font-weight: normal;

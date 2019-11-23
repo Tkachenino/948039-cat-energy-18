@@ -142,3 +142,56 @@
     position: relative;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .block-info {
+    width: 570px;
+    min-height: 372px;
+    margin: 40px 0;
+    padding: 52px 63px;
+    box-sizing: border-box;
+  }
+
+  .block-info__title {
+    padding: 20px 0 0 162px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      right: auto;
+      top: 0;
+      content: "";
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+    }
+
+    &--slim::after {
+      position: absolute;
+      left: 15px;
+      right: auto;
+      top: 0;
+      content: "";
+      width: 70px;
+      height: 97px;
+      background: url("../img/icon-cat-slim.svg");
+    }
+
+    &--pro::after {
+      position: absolute;
+      left: -25px;
+      right: auto;
+      top: 25px;
+      content: "";
+      width: 134px;
+      height: 56px;
+      background-image: url("../img/icon-cat-pro.svg");
+    }
+  }
+
+  .block-info__text {
+    width: 100%;
+    margin-top: 80px;
+  }
+}

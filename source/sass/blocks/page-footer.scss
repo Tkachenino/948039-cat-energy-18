@@ -21,3 +21,9 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer__box {
+    width: 1220px;
+  }
+}

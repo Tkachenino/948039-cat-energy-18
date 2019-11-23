@@ -34,3 +34,17 @@
     font-weight: normal;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .content-section--gray {
+    min-height: 600px;
+    background: linear-gradient(to bottom, $white 165px, $gray 165px);
+    border-top: none;
+  }
+
+  .content-section__title {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
