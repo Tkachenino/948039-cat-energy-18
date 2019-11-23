@@ -47,3 +47,66 @@
   min-height: 60px;
   margin-bottom: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .advantage {
+    width: 708px;
+    min-height: 600px;
+    margin: 0 auto;
+  }
+
+  .advantage__list {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantage__item {
+    margin-top: 40px;
+    padding-top: 117px;
+    position: relative;
+    width: 324px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 80px;
+      height: 80px;
+    }
+    &::after {
+      font-size: 281px;
+      color: $gray;
+      position: absolute;
+      top: 90px;
+      right: 90px;
+      z-index: -1;
+    }
+    &--health::after {
+      content: "1";
+    }
+
+    &--solute::after {
+      content: "2";
+    }
+
+    &--time::after {
+      content: "3";
+    }
+
+    &--weight::after {
+      content: "4";
+    }
+  }
+
+  .advantage__text {
+    width: 210px;
+    line-height: 24px;
+    min-height: 60px;
+    margin-bottom: 20px;
+  }
+}

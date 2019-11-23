@@ -1,6 +1,5 @@
 .page-header {
-  width: 320px;
-  margin: 0 auto;
+  min-width: 320px;
   min-height: 198px;
   background-color: $white;
   display: flex;
@@ -10,7 +9,7 @@
 
 .page-header__logo {
   box-sizing: border-box;
-  padding-top: 13px;
+  padding-top: 15px;
   padding-left: 20px;
   min-height: 65px;
   align-self: flex-start;
@@ -20,6 +19,7 @@
   .page-header {
     padding: 0 20px;
     width: 768px;
+    margin: 0 auto;
     box-sizing: border-box;
     min-height: 65px;
     flex-direction: row;

@@ -73,6 +73,72 @@
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translateY(-75%);
+    transform: translateY(-100%);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .block-info {
+    width: 708px;
+    margin: 30px auto;
+    min-height: 372px;
+    padding: 80px 50px;
+    box-sizing: border-box;
+  }
+
+  .block-info__title {
+    width: 100%;
+    font-size: 36px;
+    text-align: left;
+    padding: 0 200px 0 0;
+    box-sizing: border-box;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      left: auto;
+      right: 0;
+      top: 0;
+      content: "";
+      border-radius: 50%;
+      background-color: $green;
+      height: 200px;
+      width: 200px;
+    }
+
+    &--slim::after {
+      position: absolute;
+      left: auto;
+      right: 25px;
+      top: 0;
+      content: "";
+      width: 140px;
+      height: 194px;
+      background: url("../img/icon-cat-slim.svg");
+    }
+
+    &--pro::after {
+      position: absolute;
+      left: auto;
+      right: -25px;
+      top: 50px;
+      content: "";
+      width: 268px;
+      height: 112px;
+      background-image: url("../img/icon-cat-pro.svg");
+    }
+  }
+
+  .block-info__text {
+    width: 345px;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+  }
+
+  .block-info__button {
+    font-size: 20px;
+    line-height: 20px;
+    position: relative;
   }
 }

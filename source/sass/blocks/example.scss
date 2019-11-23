@@ -32,8 +32,46 @@
 }
 
 .example__range-text {
+  margin: 0;
   padding-bottom: 20px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    width: 708px;
+    margin: 40px 30px 0;
+    padding: 0;
+  }
+
+  .example__content {
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: $shadow-gray;
+  }
+
+  .example__result {
+    width: 368px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__explain {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__cost {
+    width: 192px;
+    font-size: 20px;
+    text-align: right;
+  }
 }
