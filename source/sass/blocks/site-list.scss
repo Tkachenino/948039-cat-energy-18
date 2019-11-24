@@ -27,6 +27,11 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: normal;
+  padding-bottom: 5px;
+
+  &--active {
+    border-bottom: 1px solid $green;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -50,24 +55,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .site-list {
-    display: flex;
-    justify-items: center;
-  }
-
-  .site-list__item {
-    border: none;
-    width: auto;
-    height: auto;
-    margin-left: 32px;
-
-    &:first-child {
-      border-top: none;
-      margin-left: 0;
+  .site-list__item-link {
+    &--active {
+      border-bottom: 1px solid $white;
     }
-  }
 
-  .site-list__item-link--white {
-    color: $white;
+    &--white {
+      color: $white;
+    }
   }
 }

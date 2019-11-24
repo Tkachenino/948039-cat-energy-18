@@ -24,8 +24,7 @@
   }
 
   .content-section__title {
-    width: 768px;
-    margin: 0 auto;
+    @include conteiner(768px);
     padding: 0 30px;
     box-sizing: border-box;
     text-align: left;
@@ -43,8 +42,7 @@
   }
 
   .content-section__title {
-    width: 1300px;
-    margin: 0 auto;
+    @include conteiner(1300px);
     padding: 0 40px;
   }
 }

@@ -115,9 +115,8 @@
 
 @media (min-width: $desktop-width) {
   .advantage {
-    width: 1220px;
+    @include conteiner(1220px);
     min-height: 330px;
-    margin: 0 auto;
   }
 
   .advantage__item {

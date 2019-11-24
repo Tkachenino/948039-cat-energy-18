@@ -6,25 +6,12 @@
 }
 
 .main-nav__toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(-50%, -185%);
+  width: 50px;
   border: none;
   background-color: transparent;
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav {
-    width: 510px;
-  }
-
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
   .main-nav {
     width: 510px;
   }

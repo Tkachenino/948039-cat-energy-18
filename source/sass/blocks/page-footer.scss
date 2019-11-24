@@ -4,15 +4,13 @@
 }
 
 .page-footer__logo {
-  width: 128px;
-  margin: 0 auto;
+  @include conteiner(128px);
   padding: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__box {
-    width: 708px;
-    margin: 0 auto;
+    @include conteiner(708px);
     display: flex;
     justify-content: space-between;
   }

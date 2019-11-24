@@ -79,7 +79,7 @@
 
 @media (min-width: $tablet-width) {
   .block-info {
-    width: 708px;
+    @include conteiner(708px);
     margin: 30px auto;
     min-height: 372px;
     padding: 80px 50px;

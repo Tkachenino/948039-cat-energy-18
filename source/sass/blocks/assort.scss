@@ -1,7 +1,6 @@
 @media (min-width: $desktop-width) {
   .assort {
-    width: 1300px;
-    margin: 0 auto;
+    @include conteiner(1300px);
     padding: 0 40px;
     box-sizing: border-box;
     display: flex;
