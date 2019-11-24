@@ -14,10 +14,19 @@
 }
 
 .assortment__item {
-  padding: 20px;
+  padding: 20px 19px;
   border: 1px solid $gray;
   border-collapse: collapse;
   margin-top: -1px;
+  display: flex;
+  flex-direction: column;
+}
+
+.assortment__about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .assortment__image {
@@ -25,6 +34,8 @@
 }
 
 .assortment__title {
+  width: 70%;
+  text-align: left;
   font-size: 16px;
   font-weight: normal;
   line-height: 20px;
@@ -32,6 +43,8 @@
 }
 
 .assortment__info {
+  margin-top: 30px;
+  flex-grow: 1;
   font-size: 12px;
   font-weight: normal;
   line-height: 16px;
@@ -40,7 +53,15 @@
 }
 
 .assortment__field {
-  text-align: center;
+  text-align: left;
+}
+
+.assortment__value {
+  text-align: right;
+}
+
+.assortment__button {
+  margin: 0 auto;
 }
 
 .assortment__all {
