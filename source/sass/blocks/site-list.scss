@@ -57,11 +57,15 @@
 @media (min-width: $desktop-width) {
   .site-list__item-link {
     &--active {
-      border-bottom: 1px solid $white;
+      border-bottom: 1px solid $green;
     }
+  }
 
-    &--white {
-      color: $white;
+  .site-list--desktop .site-list__item-link {
+    color: $white;
+
+    &--active {
+      border-bottom: 1px solid $white;
     }
   }
 }

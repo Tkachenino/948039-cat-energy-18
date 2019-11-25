@@ -20,6 +20,36 @@
   margin-top: -1px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+
+  &:last-of-type {
+    & .assortment__title {
+      width: 100%;
+      text-align: center;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url("../img/icon-plus.svg");
+      }
+    }
+
+    .assortment__field {
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .assortment__button {
+      background-color: $gray;
+      color: $black;
+    }
+  }
 }
 
 .assortment__about {
@@ -89,6 +119,10 @@
     padding: 166px 37px 40px;
     box-sizing: border-box;
     position: relative;
+
+    &:last-of-type {
+      background-color: $white;
+    }
   }
 
   .assortment__image {
@@ -117,5 +151,26 @@
   .assortment__button {
     width: 249px;
     height: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .assortment {
+    @include conteiner(1300px);
+    padding-top: 65px;
+  }
+
+  .assortment__header {
+    padding: 0 40px;
+  }
+
+  .assortment__item {
+    width: 245px;
+    min-height: 431px;
+    margin: 145px 40px 0;
+  }
+
+  .assortment__button {
+    width: 169px;
   }
 }
