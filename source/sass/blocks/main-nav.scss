@@ -1,9 +1,22 @@
 .main-nav {
   box-sizing: border-box;
   width: 100%;
+  position: relative;
+  margin: 0;
 }
 
 .main-nav__toggle {
+  width: 50px;
   border: none;
   background-color: transparent;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 510px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

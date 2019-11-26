@@ -1,5 +1,10 @@
-.example__content {
+.example {
+  width: 100%;
   padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.example__content {
   font-size: 14px;
   line-height: 18px;
   color: $shadow-gray;
@@ -7,17 +12,42 @@
 
 .example__result {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.example__result-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__result-block--mini {
+  position: relative;
 }
 
 .example__value {
   text-align: center;
+  padding: 20px;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  border: 1px solid $shadow-gray;
+  border-radius: 2px;
+  width: 124px;
+  min-height: 56px;
+  box-sizing: border-box;
 }
 
 .example__explain {
+  display: block;
+  width: 87px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $gray;
   text-align: center;
   font-size: 12px;
   line-height: 12px;
@@ -29,11 +59,89 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  flex-grow: 1;
 }
 
 .example__range-text {
+  margin: 0;
   padding-bottom: 20px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    @include conteiner(708px);
+    margin: 40px auto 0;
+    padding: 0;
+  }
+
+  .example__content {
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: $shadow-gray;
+  }
+
+  .example__result {
+    width: 708px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .example__result-block {
+    width: 367px;
+  }
+
+  .example__value {
+    font-size: 30px;
+    line-height: 37px;
+    width: 162px;
+    min-height: 72px;
+  }
+
+  .example__explain {
+    font-size: 14px;
+    line-height: 14px;
+    width: 142px;
+    background-color: $white;
+    top: 90px;
+  }
+
+  .example__cost {
+    width: 192px;
+    flex-grow: 0;
+    font-size: 20px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    @include conteiner(1300px);
+    padding: 0 40px;
+    display: flex;
+  }
+
+  .example__content {
+    width: 460px;
+  }
+
+  .example__result {
+    flex-direction: column;
+  }
+
+  .example__explain {
+    background-color: $gray;
+  }
+
+  .example__cost {
+    width: 325px;
+  }
+
+  .example__picture {
+    width: 610px;
+  }
 }

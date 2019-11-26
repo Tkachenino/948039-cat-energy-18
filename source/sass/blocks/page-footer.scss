@@ -1,9 +1,27 @@
 .page-footer {
   background-color: $gray;
+  padding: 0 20px;
 }
 
 .page-footer__logo {
-  width: 128px;
-  margin: 0 auto;
+  @include conteiner(128px);
   padding: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__box {
+    @include conteiner(708px);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__box {
+    width: 1220px;
+  }
 }

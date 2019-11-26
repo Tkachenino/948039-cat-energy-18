@@ -1,12 +1,13 @@
 @import "global/variables";
+@import "blocks/mixin";
 @import "global/global";
 @import "global/visually-hidden";
+@import "blocks/button";
 @import "blocks/container";
 @import "blocks/page-header.scss";
 @import "blocks/site-list";
 @import "blocks/main-nav";
 @import "blocks/select";
-@import "blocks/button";
 @import "blocks/block-info";
 @import "blocks/content-section";
 @import "blocks/advantage";
@@ -19,3 +20,4 @@
 @import "blocks/extra-goods";
 @import "blocks/gift";
 @import "blocks/form";
+@import "blocks/assort";
