@@ -1,6 +1,10 @@
 .location {
   background-color: $white;
   margin: 0;
+
+  &--gray {
+    background-color: $gray;
+  }
 }
 
 .location__info {

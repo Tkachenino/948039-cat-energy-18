@@ -17,11 +17,17 @@
 .extra-goods__item {
   padding-top: 14px;
   padding-bottom: 17px;
-  border-top: 1px solid rgba($black, 0.3);
+  border: 1px solid rgba($black, 0.3);
+  border-left: none;
+  border-right: none;
 
-  &:last-child {
-    border-bottom: 1px solid rgba($black, 0.3);
+  &:not(:first-child) {
+    margin-top: -1px;
   }
+}
+
+.extra-goods__table {
+  width: 100%;
 }
 
 .extra-goods__name {
@@ -30,6 +36,7 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .extra-goods__product {
@@ -37,6 +44,7 @@
   font-size: 14px;
   line-height: 14px;
   color: $shadow-gray;
+  text-align: left;
 }
 
 .extra-goods__cost {
@@ -46,4 +54,77 @@
   line-height: 14px;
   color: $shadow-gray;
   text-transform: uppercase;
+  text-align: right;
+}
+
+.extra-goods__button {
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .extra {
+    border-top: 3px solid $green;
+  }
+
+  .extra-goods {
+    @include conteiner(708px);
+    border: none;
+  }
+
+  .extra-goods__title {
+    margin-top: -36px;
+    width: 410px;
+    padding: 0 36px;
+    background-color: $white;
+    box-sizing: border-box;
+  }
+
+  .extra-goods__item {
+    border: 1px solid $gray;
+    padding: 37px;
+  }
+
+  .extra-goods__table {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extra-goods__cost {
+    width: 95px;
+  }
+
+  .extra-goods__button {
+    width: 633px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-block {
+    @include conteiner(1300px);
+    display: flex;
+  }
+
+  .extra-goods {
+    width: 935px;
+    padding: 20px 40px;
+  }
+
+  .extra-goods__item {
+    padding: 20px 0;
+    display: flex;
+    border-left: none;
+    border-right: none;
+  }
+
+  .extra-goods__product {
+    width: 245px;
+  }
+
+  .extra-goods__cost {
+    width: 42px;
+  }
+
+  .extra-goods__button {
+    margin-left: 40px;
+  }
 }
