@@ -157,7 +157,7 @@
 @media (min-width: $desktop-width) {
   .assortment {
     @include conteiner(1300px);
-    padding-top: 65px;
+    padding: 65px 0 0;
   }
 
   .assortment__header {
