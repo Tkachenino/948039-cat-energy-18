@@ -35,9 +35,9 @@
       </fieldset>
       <fieldset class="form__field">
         <ul class="form__list">
-          <li class="form__item"><input class="form__area" type="radio" id="slim" name="slim" value="type-of-food" checked><label class="form__value" for="slim">похудение</label></li>
-          <li class="form__item"><input class="form__area" type="radio" id="pro" name="pro" value="type-of-food"><label class="form__value" for="pro">набор массы</label></li>
-          <li class="form__item"><input class="form__area" type="radio" id="advance" name="advance" value="type-of-food"><label class="form__value" for="advance">не знаю (нужен ваш совет)</label></li>
+          <li class="form__item"><input class="form__area visually-hidden" type="radio" id="slim" value="slim" name="type-of-food" checked><label class="form__value form__radio" for="slim">похудение</label></li>
+          <li class="form__item"><input class="form__area visually-hidden" type="radio" id="pro" value="pro" name="type-of-food"><label class="form__value form__radio" for="pro">набор массы</label></li>
+          <li class="form__item"><input class="form__area visually-hidden" type="radio" id="advance" value="advance" name="type-of-food"><label class="form__value form__radio" for="advance">не знаю (нужен ваш совет)</label></li>
         </ul>
       </fieldset>
       <fieldset class="form__field form__field--green-line">
@@ -49,19 +49,21 @@
       </fieldset>
       <fieldset class="form__field form__field--green-line">
         <legend class="form__legend">Комментарий</legend>
-        <textarea class="form__area form__area--extra" name="comment" placeholder="Мой кот любит кусь">Расскажите обо всех повадках кота</textarea>
+        <textarea class="form__area form__area--extra" name="comment" rows="6" placeholder="Мой кот любит кусь">Расскажите обо всех повадках кота</textarea>
       </fieldset>
       <fieldset class="form__field form__field--green-line">
         <legend class="form__legend">Дополнительно</legend>
         <ul class="form__list">
-          <li class="form__item"><input class="form__area" type="checkbox" id="not-sugar" name="not-sugar" checked><label class="form__value" for="not-sugar">Сахарозаменитель</label></li>
-          <li class="form__item"><input class="form__area" type="checkbox" id="water" name="water"><label class="form__value" for="water">питьевая вода</label></li>
-          <li class="form__item"><input class="form__area" type="checkbox" id="milk" name="milk"><label class="form__value" for="milk">молоко</label></li>
-          <li class="form__item"><input class="form__area" type="checkbox" id="vitamin" name="vitamin"><label class="form__value" for="vitamin">витамины</label></li>
+          <li class="form__item"><input class="form__area visually-hidden" type="checkbox" id="not-sugar" name="not-sugar" checked><label class="form__value form__checkbox" for="not-sugar">Сахарозаменитель</label></li>
+          <li class="form__item"><input class="form__area visually-hidden" type="checkbox" id="water" name="water"><label class="form__value form__checkbox" for="water">питьевая вода</label></li>
+          <li class="form__item"><input class="form__area visually-hidden" type="checkbox" id="milk" name="milk"><label class="form__value form__checkbox" for="milk">молоко</label></li>
+          <li class="form__item"><input class="form__area visually-hidden" type="checkbox" id="vitamin" name="vitamin"><label class="form__value form__checkbox" for="vitamin">витамины</label></li>
         </ul>
       </fieldset>
-      <button class="button form__button" type="button">Отправить заявку</button>
+      <div class="form__field">
+      <button class="button form__button" type="submit">Отправить заявку</button>
       <p class="form__small">* - Обязательные поля</p>
+      </div>
     </form>
   </section>
   <section class="location">

@@ -3,6 +3,7 @@
   padding: 0 20px;
   font-size: 36px;
   line-height: 60px;
+  font-weight: normal;
 }
 
 .form__intro {
@@ -24,6 +25,11 @@
   }
 }
 
+.form__field--green-line {
+  margin-top: 20px;
+  border-top: 3px solid $green;
+}
+
 .form__list {
   list-style-type: none;
   padding-left: 0;
@@ -41,6 +47,7 @@
   color: $light-black;
   text-transform: uppercase;
   white-space: nowrap;
+  margin-right: 16px;
 }
 
 input[placeholder],
@@ -50,6 +57,58 @@ textarea {
   line-height: 18px;
   text-transform: uppercase;
   color: $shadow-gray;
+}
+
+.form__radio {
+  padding-left: 46px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $gray;
+  }
+}
+
+.form__area:checked + .form__radio::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $green;
+}
+
+.form__checkbox {
+  padding-left: 46px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $gray;
+  }
+}
+
+.form__area:checked + .form__checkbox::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 5px;
+  width: 21px;
+  height: 16px;
+  background: url("../img/icon-tick.svg");
 }
 
 input[type="text"],
