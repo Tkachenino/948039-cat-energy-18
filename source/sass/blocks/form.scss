@@ -206,3 +206,87 @@ textarea {
     margin-left: 60px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding-top: 65px;
+  }
+
+  .form__title {
+    @include conteiner(1220px);
+  }
+
+  .form__intro {
+    @include conteiner(1220px);
+    padding-left: 0;
+    padding-right: 895px;
+  }
+
+  .form__field {
+    @include conteiner(570px);
+    padding: 0;
+    box-sizing: border-box;
+
+    &--radio {
+      padding: 0 40px;
+    }
+
+    &--green-line {
+      @include conteiner(1220px);
+      margin: -35px auto 35px;
+    }
+  }
+
+  .form-block {
+    @include conteiner(1220px);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__item {
+    margin-bottom: 15px;
+    padding: 0;
+
+    &--owner {
+      width: 570px;
+    }
+
+    &--extra {
+      width: 245px;
+    }
+  }
+
+  .form__list {
+    &--owner {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--extra {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .form__legend {
+    margin-left: -40px;
+  }
+
+  .form__area--extra {
+    @include conteiner(1220px);
+  }
+
+  .form__field--submit {
+    @include conteiner(1220px);
+    margin-bottom: 35px;
+  }
+
+  .form__button {
+    margin: 0;
+    width: 568px;
+  }
+
+  .form__small {
+    margin-left: 80px;
+  }
+}
