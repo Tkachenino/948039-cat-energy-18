@@ -7,7 +7,7 @@
 }
 
 .form__intro {
-  padding: 0 20px;
+  padding: 0 20px 35px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -15,24 +15,23 @@
 }
 
 .form__field {
-  margin: 0;
+  margin: -35px 0 35px 0;
   padding: 0 20px;
   border: none;
 
-  &:nth-of-type(2) {
+  &--radio {
     border-bottom: 1px solid $gray;
     border-top: 1px solid $gray;
   }
 }
 
-.form__field--green-line {
+.form__field-block--green-line {
   margin-top: 20px;
   border-top: 3px solid $green;
 }
 
 .form__list {
-  list-style-type: none;
-  padding-left: 0;
+  padding: 20px 0;
 }
 
 .form__item {
@@ -122,9 +121,11 @@ textarea {
 }
 
 .form__legend {
-  padding: 20px 0;
+  padding: 20px;
+  margin-left: -20px;
   font-size: 24px;
   line-height: 24px;
+  background-color: $white;
 }
 
 .form__small {
@@ -132,4 +133,76 @@ textarea {
   line-height: 16px;
   color: $shadow-gray;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form__title {
+    @include conteiner(708px);
+    text-align: left;
+  }
+
+  .form__intro {
+    @include conteiner(708px);
+    text-align: left;
+    padding: 0 324px 35px 40px;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__field {
+    @include conteiner(708px);
+    margin: -35px auto 35px;
+    padding: 0 30px;
+
+    &--radio {
+      @include conteiner(630px);
+      margin-bottom: 50px;
+      box-sizing: border-box;
+      padding: 0;
+      border: 1px solid $gray;
+    }
+  }
+
+  .form__legend {
+    background-color: $white;
+    margin-left: 0;
+    padding: 20px 40px;
+  }
+
+  .form__item {
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+
+  .form__area--extra {
+    @include conteiner(630px);
+    margin-left: 40px;
+  }
+
+  .form__list--extra {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__item--extra {
+    width: 354px;
+  }
+
+  .form__field--submit {
+    display: flex;
+  }
+
+  .form__button {
+    width: 283px;
+    height: 52px;
+    margin-left: 40px;
+  }
+
+  .form__small {
+    font-size: 16px;
+    width: 324px;
+    text-align: left;
+    margin-left: 60px;
+  }
 }
