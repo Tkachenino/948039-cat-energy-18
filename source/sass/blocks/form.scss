@@ -1,15 +1,21 @@
 .form__block {
   padding-bottom: 42px;
+
+  &--green {
+    @include green-line;
+  }
 }
 
-.form__block-green {
-  @include green-line;
+.form__container {
+  @include width-container;
+  padding: 0;
 }
 
 .form__list {
   border: none;
   margin: 0;
   padding: 20px;
+  box-sizing: border-box;
 
   &--radio {
     border: 1px solid $gray;
@@ -116,82 +122,47 @@ textarea {
 }
 
 @media (min-width: $tablet-width) {
-  .form__legend {
-    margin-left: -40px;
-    padding: 0 40px;
+  .form__container {
+    padding: 0 69px;
   }
 
   .form__list {
-    @include conteiner(630px);
     padding: 0;
-    box-sizing: border-box;
 
     &--radio {
-      padding: 20px;
       border: 1px solid $gray;
     }
-
-    &--button {
-      display: flex;
-    }
   }
 
-  .form__item-block--add {
+  .form__col-tablet {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
-  .form__item {
-    &--add {
-      width: 285px;
-    }
-  }
-
-  .form__button {
-    width: 283px;
-    height: 52px;
-    margin-right: 60px;
+  .form__col-tablet-item {
+    width: calc(100% / 2 - 30px);
   }
 }
 
 @media (min-width: $desktop-width) {
-  .form__block {
-    @include conteiner(1220px);
+  .form__container {
+    padding: 0 40px;
+  }
+
+  .form__col-desk {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
-  .form__list {
-    width: 570px;
-    margin: 0;
-
-    &--extra {
-      @include conteiner(1220px);
-    }
-  }
-
-  .form__list--button {
-    @include conteiner(1220px);
-  }
-
-  .form__item-block--owner {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .form__item {
-    &--owner {
-      width: 570px;
+  .form__col-desk-item {
+    &--2col {
+      width: calc(50% - 40px);
     }
 
-    &--add {
-      width: 245px;
+    &--4col {
+      width: calc(25% - 60px);
     }
-  }
-
-  .form__button {
-    width: 568px;
-    margin-right: 80px;
   }
 }
