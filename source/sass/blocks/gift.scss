@@ -1,11 +1,12 @@
 .gift {
   position: relative;
-  margin: 0 auto;
   padding-top: 100px;
-  width: 280px;
-  height: 289px;
+  margin: 40px 0;
+  width: 100%;
+  min-height: 230px;
   box-sizing: border-box;
-  background: $green url("../img/gift-photo-mobile@1x.jpg");
+  background: $green url("../img/gift-photo-mobile@1x.jpg") center no-repeat;
+  background-size: cover;
 }
 
 .gift__content {
@@ -23,5 +24,19 @@
     left: 50%;
     transform: translate(-50%, 50%);
     background-image: url("../img/icon-gift.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    min-height: 200px;
+    margin: 70px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    width: 245px;
+    min-height: 289px;
   }
 }

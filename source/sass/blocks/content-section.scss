@@ -2,14 +2,8 @@
   background-color: $gray;
 }
 
-.example__picture {
-  padding: 0 20px;
-  text-align: center;
-}
-
 .content-section__title {
-  margin: 0 auto;
-  padding: 0 20px;
+  @include width-container;
   text-align: left;
   font-size: 36px;
   line-height: 60px;
@@ -24,13 +18,7 @@
   }
 
   .content-section__title {
-    @include conteiner(768px);
-    padding: 0 30px;
-    box-sizing: border-box;
-    text-align: left;
     font-size: 60px;
-    line-height: 60px;
-    font-weight: normal;
   }
 }
 
@@ -39,10 +27,5 @@
     min-height: 600px;
     background: linear-gradient(to bottom, $white 165px, $gray 165px);
     border-top: none;
-  }
-
-  .content-section__title {
-    @include conteiner(1300px);
-    padding: 0 40px;
   }
 }

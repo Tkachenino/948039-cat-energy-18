@@ -6,7 +6,7 @@
 }
 
 .select__box {
-  @include conteiner(320px);
+  @include width-container;
 }
 
 .select__title {
@@ -37,7 +37,7 @@
   }
 
   .select__box {
-    @include conteiner(487px);
+    padding: 0 120px;
   }
 
   .select__title {
@@ -74,10 +74,7 @@
   }
 
   .select__box {
-    @include conteiner(1300px);
     margin-top: 50px;
-    padding: 0 120px;
-    box-sizing: border-box;
   }
 
   .select__title {

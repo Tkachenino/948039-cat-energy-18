@@ -1,0 +1,40 @@
+.intro {
+  padding: 0 20px;
+}
+
+.intro__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+.intro__text {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    @include conteiner(708px);
+    padding: 0;
+  }
+
+  .intro__text {
+    width: 50%;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    @include conteiner(1220px);
+    padding-top: 65px;
+  }
+
+  .intro__text {
+    padding: 0;
+    width: 325px;
+  }
+}

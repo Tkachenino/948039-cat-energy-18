@@ -1,8 +1,9 @@
+.assort {
+  @include width-container;
+}
+
 @media (min-width: $desktop-width) {
   .assort {
-    @include conteiner(1300px);
-    padding: 0 40px;
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
   }

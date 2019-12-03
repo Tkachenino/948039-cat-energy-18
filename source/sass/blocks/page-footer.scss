@@ -1,27 +1,24 @@
 .page-footer {
   background-color: $gray;
-  padding: 0 20px;
+}
+
+.page-footer__box {
+  @include width-container;
 }
 
 .page-footer__logo {
-  @include conteiner(128px);
-  padding: 20px;
+  text-align: center;
+  padding: 20px 0;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__box {
-    @include conteiner(708px);
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .page-footer__logo {
     margin: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-footer__box {
-    width: 1220px;
   }
 }
