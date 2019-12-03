@@ -1,14 +1,14 @@
 .extra {
-  border-top: 3px solid $green;
+  @include green-line;
   margin-top: 40px;
 }
 
 .extra-goods {
-  padding: 20px;
+  @include width-container;
 }
 
 .extra-goods__title {
-  margin-top: -36px;
+  margin-top: -20px;
   margin-left: -20px;
   background-color: $white;
   box-sizing: border-box;
@@ -68,13 +68,8 @@
   text-align: right;
 }
 
-.extra-goods__button {
-  margin: 0 auto;
-}
-
 @media (min-width: $tablet-width) {
   .extra-goods {
-    @include conteiner(708px);
     border: none;
   }
 
@@ -100,18 +95,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .extra-block {
-    @include conteiner(1300px);
-    display: flex;
-  }
-
   .extra-goods {
-    @include conteiner(975px);
-    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .extra-goods__title {
     padding: 0 40px;
+    margin-top: 0;
     margin-left: -40px;
   }
 

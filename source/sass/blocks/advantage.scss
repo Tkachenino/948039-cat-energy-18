@@ -1,5 +1,8 @@
+.advantage {
+  @include width-container;
+}
+
 .advantage__list {
-  margin: 0 20px;
   padding-left: 80px;
   list-style-type: none;
   position: relative;
@@ -50,9 +53,7 @@
 
 @media (min-width: $tablet-width) {
   .advantage {
-    width: 708px;
     min-height: 600px;
-    margin: 0 auto;
   }
 
   .advantage__list {
@@ -115,7 +116,6 @@
 
 @media (min-width: $desktop-width) {
   .advantage {
-    @include conteiner(1220px);
     min-height: 330px;
   }
 

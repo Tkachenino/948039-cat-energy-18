@@ -1,4 +1,6 @@
 .page-header {
+  @include width-container;
+  padding: 0;
   min-width: 320px;
   min-height: 198px;
   background-color: $white;
@@ -18,8 +20,6 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    @include conteiner(768px);
-    padding: 0 30px;
     box-sizing: border-box;
     min-height: 65px;
     flex-direction: row;
@@ -33,11 +33,9 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    position: absolute;
     left: 50%;
-    padding: 0 40px;
     transform: translateX(-50%);
-    width: 1300px;
+    position: absolute;
     background-color: transparent;
   }
 }

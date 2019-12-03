@@ -1,0 +1,36 @@
+@mixin conteiner($width) {
+  width: $width;
+  margin: 0 auto;
+}
+
+@mixin width-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1300px;
+    padding: 0 40px;
+  }
+}
+
+@mixin green-line {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 3px;
+    background-color: $green;
+    top: 15px;
+    z-index: -1;
+  }
+}

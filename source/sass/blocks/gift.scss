@@ -1,12 +1,12 @@
 .gift {
   position: relative;
-  margin: 0 20px 0 20px;
   padding-top: 100px;
-  min-width: 280px;
+  margin: 40px 0;
+  width: 100%;
   min-height: 230px;
   box-sizing: border-box;
   background: $green url("../img/gift-photo-mobile@1x.jpg") center no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .gift__content {
@@ -29,13 +29,14 @@
 
 @media (min-width: $tablet-width) {
   .gift {
-    @include conteiner(708px);
+    min-height: 200px;
+    margin: 70px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .gift {
-    margin: 40px;
-    min-width: 245px;
+    width: 245px;
+    min-height: 289px;
   }
 }

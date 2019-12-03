@@ -1,7 +1,5 @@
 .example {
-  width: 100%;
-  padding: 0 20px;
-  box-sizing: border-box;
+  @include width-container;
 }
 
 .example__content {
@@ -19,10 +17,10 @@
 .example__result-block {
   display: flex;
   justify-content: space-between;
-}
 
-.example__result-block--mini {
-  position: relative;
+  &--mini {
+    position: relative;
+  }
 }
 
 .example__value {
@@ -62,6 +60,10 @@
   flex-grow: 1;
 }
 
+.example__picture {
+  text-align: center;
+}
+
 .example__range-text {
   margin: 0;
   padding-bottom: 20px;
@@ -71,12 +73,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .example {
-    @include conteiner(708px);
-    margin: 40px auto 0;
-    padding: 0;
-  }
-
   .example__content {
     padding: 0;
     font-size: 16px;
@@ -120,8 +116,6 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    @include conteiner(1300px);
-    padding: 0 40px;
     display: flex;
   }
 
