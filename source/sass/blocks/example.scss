@@ -1,9 +1,14 @@
 .example {
   @include width-container;
+  padding-bottom: 16px;
 }
 
 .example__content {
+  margin: 0;
+  padding-top: 24px;
+  padding-right: 1px;
   font-size: 14px;
+  font-family: "Arial", sans-serif;
   line-height: 18px;
   color: $shadow-gray;
 }
@@ -25,7 +30,7 @@
 
 .example__value {
   text-align: center;
-  padding: 20px;
+  padding: 14px;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -42,13 +47,14 @@
   padding: 0 20px;
   box-sizing: border-box;
   position: absolute;
-  top: 70px;
+  top: 60px;
   left: 50%;
   transform: translateX(-50%);
   background-color: $gray;
   text-align: center;
   font-size: 12px;
   line-height: 12px;
+  font-family: "Arial", sans-serif;
   color: $shadow-gray;
 }
 
@@ -58,10 +64,23 @@
   text-transform: uppercase;
   text-align: center;
   flex-grow: 1;
+  margin-top: 11px;
 }
 
 .example__picture {
   text-align: center;
+}
+
+.example__img {
+  margin: 20px 0 0 -20px;
+}
+
+.example__range {
+  margin-top: 31px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 40px 0 44px;
 }
 
 .example__range-text {
@@ -70,6 +89,10 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.example__range-row {
+  margin: 0 18px;
 }
 
 @media (min-width: $tablet-width) {
