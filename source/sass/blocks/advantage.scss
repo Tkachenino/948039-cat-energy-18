@@ -61,6 +61,7 @@
 @media (min-width: $tablet-width) {
   .advantage {
     min-height: 600px;
+    padding-bottom: 41px;
   }
 
   .advantage__list {
@@ -73,8 +74,9 @@
   }
 
   .advantage__item {
-    margin-top: 40px;
-    padding-top: 117px;
+    margin-top: 72px;
+    margin-bottom: 41px;
+    padding-top: 94px;
     position: relative;
     width: 324px;
 
@@ -91,33 +93,35 @@
       font-size: 281px;
       color: $gray;
       position: absolute;
-      top: 90px;
-      right: 90px;
+      top: 93px;
       z-index: -1;
     }
 
     &--health::after {
       content: "1";
+      right: 95px;
     }
 
     &--solute::after {
       content: "2";
+      right: 79px;
     }
 
     &--time::after {
       content: "3";
+      right: 77px;
     }
 
     &--weight::after {
       content: "4";
+      right: 75px;
     }
   }
 
   .advantage__text {
-    width: 210px;
+    width: 250px;
+    font-size: 16px;
     line-height: 24px;
-    min-height: 60px;
-    margin-bottom: 20px;
   }
 }
 

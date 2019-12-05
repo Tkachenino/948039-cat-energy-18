@@ -96,8 +96,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .example {
+    padding: 64px 30px 0;
+  }
+
   .example__content {
-    padding: 0;
+    padding: 0 6px 0 0;
     font-size: 16px;
     line-height: 24px;
     color: $shadow-gray;
@@ -105,6 +109,7 @@
 
   .example__result {
     width: 708px;
+    padding-top: 23px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -124,16 +129,47 @@
   .example__explain {
     font-size: 14px;
     line-height: 14px;
-    width: 142px;
+    width: 128px;
+    padding: 0;
     background-color: $white;
-    top: 90px;
+    top: 80px;
+  }
+
+  .example__cost-block {
+    padding-top: 41px;
   }
 
   .example__cost {
     width: 192px;
+    margin: 0;
+    padding-bottom: 10px;
     flex-grow: 0;
     font-size: 20px;
     text-align: right;
+  }
+
+  .example__img {
+    width: 690px;
+    height: 517px;
+    margin: 56px 0 0 13px;
+  }
+
+  .example__range {
+    min-height: auto;
+    align-items: normal;
+    padding: 0 69px;
+    margin-top: 8px;
+  }
+
+  .example__range-row {
+    margin-top: 16px;
+  }
+
+  .example__range-text {
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px dotted $shadow-gray;
   }
 }
 
