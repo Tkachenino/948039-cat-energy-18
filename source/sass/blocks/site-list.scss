@@ -27,7 +27,7 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: normal;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
 
   &--active {
     border-bottom: 1px solid $green;
@@ -45,12 +45,17 @@
     border: none;
     width: auto;
     height: auto;
-    margin-left: 32px;
+    margin-left: 36px;
 
     &:first-child {
       border-top: none;
       margin-left: 0;
     }
+  }
+
+  .site-list__item-link {
+    font-size: 18px;
+    line-height: 25px;
   }
 }
 

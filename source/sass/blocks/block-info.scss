@@ -84,8 +84,14 @@
 
 @media (min-width: $tablet-width) {
   .block-info {
+    box-sizing: border-box;
     min-height: 372px;
-    padding: 80px 50px;
+    padding: 76px 62px 62px 52px;
+    margin-bottom: 30px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
   .block-info__title {
@@ -100,7 +106,7 @@
       position: absolute;
       left: auto;
       right: 0;
-      top: 0;
+      top: 16px;
       content: "";
       border-radius: 50%;
       background-color: $green;
@@ -111,8 +117,8 @@
     &--slim::after {
       position: absolute;
       left: auto;
-      right: 25px;
-      top: 0;
+      right: 30px;
+      top: 4px;
       content: "";
       width: 140px;
       height: 194px;
@@ -122,8 +128,8 @@
     &--pro::after {
       position: absolute;
       left: auto;
-      right: -25px;
-      top: 50px;
+      right: -34px;
+      top: 60px;
       content: "";
       width: 268px;
       height: 112px;
@@ -132,16 +138,27 @@
   }
 
   .block-info__text {
-    width: 345px;
+    min-height: 95px;
+    width: 384px;
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
+    margin: 25px 0 35px;
+
+    &--pro {
+      width: 343px;
+    }
   }
 
   .block-info__button {
     font-size: 20px;
     line-height: 20px;
     position: relative;
+    padding-right: 48px;
+
+    &::after {
+      transform: translateY(-135%);
+    }
   }
 }
 

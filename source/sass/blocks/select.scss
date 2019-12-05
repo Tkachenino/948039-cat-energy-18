@@ -29,6 +29,11 @@
   margin: 28px 0 0;
 }
 
+.select__img {
+  width: 100%;
+  height: 100%;
+}
+
 .select__button {
   margin: 3px auto 23px;
   font-size: 14px;
@@ -37,7 +42,7 @@
 
 @media (min-width: $tablet-width) {
   .select {
-    min-height: 835px;
+    min-height: 810px;
     padding-top: 50px;
     text-align: left;
     color: $black;
@@ -50,26 +55,35 @@
 
   .select__title {
     margin: 0;
-    padding: 0 0 40px;
+    padding: 0 0 15px;
     font-size: 60px;
     line-height: 60px;
   }
 
   .select__slogan {
+    font-size: 20px;
+    line-height: 20px;
     padding: 0;
   }
 
   .select__picture {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -8px);
     z-index: -1;
   }
 
+  .select__img {
+    width: 709px;
+    height: 609px;
+  }
+
   .select__button {
+    font-size: 20px;
+    line-height: 20px;
     padding-top: 15px;
     box-sizing: border-box;
-    margin: 20px 0 20px 0;
+    margin: 48px 0 20px 0;
     width: 245px;
     height: 52px;
   }

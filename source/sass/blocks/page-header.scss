@@ -18,16 +18,27 @@
   align-self: flex-start;
 }
 
+.page-header__logo-img {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     box-sizing: border-box;
     min-height: 65px;
+    padding-top: 25px;
     flex-direction: row;
     justify-content: space-between;
   }
 
   .page-header__logo {
-    padding-left: 0;
+    padding: 0;
+  }
+
+  .page-header__logo-img {
+    max-width: 173px;
+    height: 58px;
   }
 }
 
