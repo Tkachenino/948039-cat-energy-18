@@ -13,6 +13,8 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__box {
+    min-height: 143px;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;

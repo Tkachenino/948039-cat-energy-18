@@ -26,3 +26,9 @@
     fill: $shadow-gray;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    width: 163px;
+  }
+}

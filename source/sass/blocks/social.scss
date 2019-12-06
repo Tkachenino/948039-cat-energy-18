@@ -28,4 +28,25 @@
   .social {
     border: none;
   }
+
+  .social__list {
+    transform: translateX(8px);
+  }
+
+  .social__icon {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--inst {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+  }
 }

@@ -20,8 +20,8 @@
   }
 
   .content-section--gray {
-    min-height: 1080px;
-    background: linear-gradient(to bottom, $white 620px, $gray 620px);
+    min-height: 1036px;
+    background: linear-gradient(to bottom, $white 620px, rgba($white, 0) 620px), linear-gradient(to right, $light-gray-bg 50%, $dark-gray-bg 50%);
     border-top: 1px solid $gray;
   }
 

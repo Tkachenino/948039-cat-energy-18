@@ -44,7 +44,7 @@
 .example__explain {
   display: block;
   width: 87px;
-  padding: 0 20px;
+  padding: 0 15px;
   box-sizing: border-box;
   position: absolute;
   top: 60px;
@@ -56,6 +56,13 @@
   line-height: 12px;
   font-family: "Arial", sans-serif;
   color: $shadow-gray;
+}
+
+.example__cost-block {
+  min-width: 150px;
+  padding: 0 45px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .example__cost {
@@ -116,7 +123,7 @@
   }
 
   .example__result-block {
-    width: 367px;
+    width: 365px;
   }
 
   .example__value {
@@ -136,11 +143,14 @@
   }
 
   .example__cost-block {
-    padding-top: 41px;
+    width: 175px;
+    height: 60px;
+    padding: 42px 0 0;
+    justify-content: flex-end;
+    flex-wrap: wrap;
   }
 
   .example__cost {
-    width: 192px;
     margin: 0;
     padding-bottom: 10px;
     flex-grow: 0;
