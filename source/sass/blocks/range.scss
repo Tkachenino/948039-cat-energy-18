@@ -1,4 +1,5 @@
 .range {
+  position: relative;
   padding: 3px 5px;
   width: 100%;
   height: 14px;
@@ -9,6 +10,9 @@
 }
 
 .range__tools {
+  position: absolute;
+  top: 3px;
+  left: 5px;
   width: 50%;
   height: 6px;
   border-radius: 3px;
@@ -26,12 +30,12 @@
   }
 
   .range__tools {
-    position: relative;
+    padding: 0;
     width: 34px;
+    height: 34px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 34px;
     box-sizing: border-box;
     border-radius: 50%;
     border: 13px solid $white;
