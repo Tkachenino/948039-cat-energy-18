@@ -44,9 +44,15 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    padding-top: 54px;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
     background-color: transparent;
+  }
+
+  .page-header__logo-img {
+    min-width: 202px;
+    height: 59px;
   }
 }

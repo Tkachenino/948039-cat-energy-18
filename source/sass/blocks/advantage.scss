@@ -128,13 +128,26 @@
 @media (min-width: $desktop-width) {
   .advantage {
     min-height: 330px;
+    padding-bottom: 31px;
   }
 
   .advantage__item {
     width: 245px;
 
-    &::after {
-      right: 10px;
+    &--health::after {
+      right: 16px;
+    }
+
+    &--solute::after {
+      right: 0;
+    }
+
+    &--time::after {
+      right: -2px;
+    }
+
+    &--weight::after {
+      right: -3px;
     }
   }
 }

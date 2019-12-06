@@ -60,7 +60,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-list {
+    padding-top: 6px;
+  }
+
   .site-list__item-link {
+    font-size: 20px;
+
     &--active {
       border-bottom: 1px solid $green;
     }

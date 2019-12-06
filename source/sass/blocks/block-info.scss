@@ -167,19 +167,23 @@
     width: 570px;
     min-height: 372px;
     margin: 40px 0;
-    padding: 52px 63px;
+    padding: 52px 53px;
     box-sizing: border-box;
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
   }
 
   .block-info__title {
-    padding: 20px 0 0 162px;
+    padding: 24px 0 0 161px;
     position: relative;
 
     &::before {
       position: absolute;
       left: 0;
       right: auto;
-      top: 0;
+      top: -5px;
       content: "";
       border-radius: 50%;
       height: 100px;
@@ -188,9 +192,9 @@
 
     &--slim::after {
       position: absolute;
-      left: 15px;
+      left: 13px;
       right: auto;
-      top: 0;
+      top: -11px;
       content: "";
       width: 70px;
       height: 97px;
@@ -199,9 +203,9 @@
 
     &--pro::after {
       position: absolute;
-      left: -25px;
+      left: -19px;
       right: auto;
-      top: 25px;
+      top: 17px;
       content: "";
       width: 134px;
       height: 56px;
@@ -211,6 +215,8 @@
 
   .block-info__text {
     width: 100%;
-    margin-top: 80px;
+    margin-bottom: 0;
+    margin-top: 74px;
+    padding-bottom: 7px;
   }
 }

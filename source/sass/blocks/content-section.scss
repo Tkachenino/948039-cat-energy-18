@@ -31,9 +31,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .content-section {
+    padding-top: 34px;
+  }
+
   .content-section--gray {
-    min-height: 600px;
-    background: linear-gradient(to bottom, $white 165px, $gray 165px);
+    min-height: 597px;
+    background: linear-gradient(to bottom, $white 168px, rgba($white, 0) 168px), linear-gradient(to right, $light-gray-bg 50%, $dark-gray-bg 50%);
     border-top: none;
   }
 }

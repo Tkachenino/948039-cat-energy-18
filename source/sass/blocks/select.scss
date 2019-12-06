@@ -91,7 +91,8 @@
 
 @media (min-width: $desktop-width) {
   .select {
-    min-height: 647px;
+    padding-top: 173px;
+    min-height: 523px;
     background: url("../img/index-background-desktop@1x.jpg") top 0 left 100% no-repeat, linear-gradient(to left, $green 50%, $white 50%);
   }
 
@@ -106,9 +107,18 @@
 
   .select__picture {
     position: absolute;
-    top: 130px;
-    left: 60%;
+    top: 114px;
+    left: 58%;
     transform: translateX(-50%);
     z-index: 1;
+  }
+
+  .select__img {
+    width: 552px;
+    height: 499px;
+  }
+
+  .select__button {
+    margin-top: 52px;
   }
 }
