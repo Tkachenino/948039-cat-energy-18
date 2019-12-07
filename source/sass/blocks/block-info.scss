@@ -164,7 +164,7 @@
 
 @media (min-width: $desktop-width) {
   .block-info {
-    width: 570px;
+    width: calc(50% - 40px);
     min-height: 372px;
     margin: 40px 0;
     padding: 52px 53px;

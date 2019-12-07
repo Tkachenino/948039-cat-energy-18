@@ -63,11 +63,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .extra {
+    margin-top: 94px;
+  }
+
   .extra-goods {
     border: none;
   }
 
   .extra-goods__title {
+    font-size: 36px;
+    line-height: 36px;
     margin-left: 0;
     width: 410px;
     padding: 0 36px;
