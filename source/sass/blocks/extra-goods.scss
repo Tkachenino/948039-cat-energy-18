@@ -1,6 +1,6 @@
 .extra {
   @include green-line;
-  margin-top: 40px;
+  margin-top: 48px;
 }
 
 .extra-goods {
@@ -20,7 +20,7 @@
 }
 
 .extra-goods__list {
-  margin: 0;
+  margin-top: 35px;
   padding-left: 0;
   list-style-type: none;
 }
@@ -37,35 +37,29 @@
   }
 }
 
-.extra-goods__table {
-  width: 100%;
-}
-
 .extra-goods__name {
   margin: 0;
-  padding-bottom: 16px;
+  padding-bottom: 12px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   text-align: left;
 }
 
-.extra-goods__product {
-  padding-bottom: 14px;
-  font-size: 14px;
-  line-height: 14px;
-  color: $shadow-gray;
-  text-align: left;
+.extra-goods__row {
+  display: flex;
+  justify-content: space-between;
 }
 
-.extra-goods__cost {
-  right: 0;
-  padding-bottom: 14px;
+.extra-goods__value {
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   color: $shadow-gray;
-  text-transform: uppercase;
-  text-align: right;
+}
+
+.extra-goods__button {
+  margin-top: 15px;
 }
 
 @media (min-width: $tablet-width) {

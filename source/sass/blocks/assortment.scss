@@ -5,7 +5,7 @@
 
 .assortment__header {
   margin: 0;
-  padding: 20px;
+  padding: 15px 20px 28px;
   font-size: 36px;
   font-weight: normal;
   line-height: 60px;
@@ -19,7 +19,7 @@
 }
 
 .assortment__item {
-  padding: 20px 19px;
+  padding: 0 19px 23px;
   border: 1px solid $gray;
   border-collapse: collapse;
   margin-top: -1px;
@@ -30,6 +30,7 @@
   &:last-of-type {
     & .assortment__title {
       width: 100%;
+      padding: 80px 0 0;
       text-align: center;
       position: relative;
 
@@ -38,21 +39,25 @@
         position: absolute;
         width: 30px;
         height: 30px;
-        top: -30px;
+        top: 27px;
         left: 50%;
         transform: translateX(-50%);
         background: url("../img/icon-plus.svg");
       }
     }
 
-    .assortment__field {
+    .assortment__value {
+      padding: 9px 0 0 0;
       text-align: center;
-      font-size: 12px;
     }
 
     .assortment__button {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 20px;
+      font-family: "Oswald", "Arial", sans-serif;
       background-color: $gray;
-      color: $black;
+      color: $shadow-gray;
     }
   }
 }
@@ -66,10 +71,14 @@
 
 .assortment__image {
   margin: 0;
+  text-align: center;
+  width: 50%;
 }
 
 .assortment__title {
-  width: 70%;
+  padding-right: 40px;
+  padding-bottom: 13px;
+  margin: 0;
   text-align: left;
   font-size: 16px;
   font-weight: normal;
@@ -78,8 +87,9 @@
 }
 
 .assortment__info {
-  margin-top: 30px;
-  flex-grow: 1;
+  margin: 0;
+  padding-top: 22px;
+  width: 50%;
   font-size: 12px;
   font-weight: normal;
   line-height: 16px;
@@ -87,13 +97,17 @@
   text-align: center;
 }
 
-.assortment__field {
-  text-align: left;
+.assortment__row {
+  display: flex;
+  justify-content: space-between;
 }
 
 .assortment__value {
-  text-align: right;
-  text-transform: uppercase;
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+  color: $shadow-gray;
 }
 
 .assortment__button {

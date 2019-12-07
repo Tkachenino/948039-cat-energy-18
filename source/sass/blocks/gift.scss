@@ -1,15 +1,17 @@
 .gift {
   position: relative;
-  padding-top: 100px;
-  margin: 40px 0;
+  padding: 187px 50px 20px;
+  margin: 39px 0 35px;
   width: 100%;
-  min-height: 230px;
+  min-height: 289px;
   box-sizing: border-box;
   background: $green url("../img/gift-photo-mobile@1x.jpg") center no-repeat;
   background-size: cover;
 }
 
 .gift__content {
+  margin: 0;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: $white;
@@ -18,12 +20,12 @@
   &::before {
     position: absolute;
     content: "";
-    width: 55px;
+    width: 65px;
     height: 60px;
-    top: 0;
+    top: 35px;
     left: 50%;
-    transform: translate(-50%, 50%);
-    background-image: url("../img/icon-gift.svg");
+    transform: translateX(-42%);
+    background: url("../img/icon-gift.svg") no-repeat;
   }
 }
 

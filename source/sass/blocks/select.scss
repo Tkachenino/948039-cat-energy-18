@@ -97,6 +97,7 @@
   }
 
   .select__box {
+    position: relative;
     margin-top: 50px;
   }
 
@@ -107,9 +108,8 @@
 
   .select__picture {
     position: absolute;
-    top: 114px;
-    left: 58%;
-    transform: translateX(-50%);
+    top: -100px;
+    left: 766px;
     z-index: 1;
   }
 
