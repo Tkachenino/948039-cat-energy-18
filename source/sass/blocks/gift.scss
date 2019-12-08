@@ -22,7 +22,7 @@
     content: "";
     width: 65px;
     height: 60px;
-    top: 35px;
+    top: 65px;
     left: 50%;
     transform: translateX(-42%);
     background: url("../img/icon-gift.svg") no-repeat;
@@ -32,7 +32,18 @@
 @media (min-width: $tablet-width) {
   .gift {
     min-height: 200px;
-    margin: 70px 0;
+    margin: 69px 0 76px;
+    padding: 71px 105px 20px 423px;
+  }
+
+  .gift__content {
+    text-align: left;
+
+    &::before {
+      top: 64px;
+      left: 91px;
+      transform: translateX(0);
+    }
   }
 }
 
@@ -40,5 +51,11 @@
   .gift {
     width: 245px;
     min-height: 289px;
+    padding: 185px 30px 20px;
+    margin: 116px 0 86px;
+  }
+
+  .gift__content {
+    text-align: center;
   }
 }

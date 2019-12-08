@@ -137,7 +137,7 @@
     width: calc(50% - 30px);
     min-height: 431px;
     background-color: $gray;
-    padding: 163px 37px 40px;
+    padding: 163px 37px 39px;
     box-sizing: border-box;
     position: relative;
 
@@ -217,16 +217,57 @@
 
 @media (min-width: $desktop-width) {
   .assortment {
-    padding-top: 65px;
+    padding-top: 189px;
   }
 
   .assortment__header {
-    padding: 0 40px;
+    padding: 0;
+  }
+
+  .assortment__list {
+    padding-top: 24px;
   }
 
   .assortment__item {
     width: 245px;
     min-height: 431px;
-    margin: 145px 0 0;
+    margin: 141px 0 0;
+
+    &:last-of-type {
+      & .assortment__title {
+        padding: 0 10px;
+
+        &::before {
+          width: 60px;
+          height: 60px;
+          top: -109px;
+        }
+      }
+
+      & .assortment__value {
+        line-height: 19px;
+        padding: 25px 0 0;
+      }
+    }
+  }
+
+  .assortment__image {
+    bottom: 302px;
+  }
+
+  .assortment__img {
+    &--small {
+      width: 245px;
+      height: 174px;
+    }
+
+    &--big {
+      width: 245px;
+      height: 208px;
+    }
+  }
+
+  .assortment__title {
+    padding: 0 10px 26px;
   }
 }

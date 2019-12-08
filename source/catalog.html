@@ -16,7 +16,7 @@
     </picture>
   </a>
   <button class="main-nav__toggle" type="button" aria-label="Главное меню"><img src="img/icon-mobile-menu.svg" width="24" height="18" alt="Главное меню"></button>
-  <nav class="main-nav">
+  <nav class="main-nav visually-hidden">
     <ul class="main-nav__list site-list">
       <li class="site-list__item"><a class="site-list__item-link" href="index.html">Главная</a></li>
       <li class="site-list__item"><a class="site-list__item-link site-list__item-link--active" href="#">Каталог продукции</a></li>
@@ -33,6 +33,7 @@
         <div class="assortment__about">
           <p class="assortment__image">
             <picture>
+              <source srcset="img/chicken-small-desktop@1x.png" media="(min-width: 1300px)">
               <source srcset="img/chicken-small-tablet@1x.png" media="(min-width: 768px)">
               <img class="assortment__img assortment__img--small" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy со вкусом курицы 500 гр.">
             </picture>
@@ -59,6 +60,7 @@
         <div class="assortment__about">
           <p class="assortment__image">
             <picture>
+              <source srcset="img/chicken-big-desktop@1x.png" media="(min-width: 1300px)">
               <source srcset="img/chicken-big-tablet@1x.png" media="(min-width: 768px)">
               <img class="assortment__img assortment__img--big" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy со вкусом курицы 1000 гр.">
             </picture>
@@ -85,6 +87,7 @@
         <div class="assortment__about">
           <p class="assortment__image">
             <picture>
+              <source srcset="img/fish-small-desktop@1x.png" media="(min-width: 1300px)">
               <source srcset="img/fish-small-tablet@1x.png" media="(min-width: 768px)">
               <img class="assortment__img assortment__img--small" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy со вкусом рыбы 500 гр.">
             </picture>
@@ -111,6 +114,7 @@
         <div class="assortment__about">
           <p class="assortment__image">
             <picture>
+              <source srcset="img/fish-big-desktop@1x.png" media="(min-width: 1300px)">
               <source srcset="img/fish-big-tablet@1x.png" media="(min-width: 768px)">
               <img class="assortment__img assortment__img--big" src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy со вкусом рыбы 1000 гр.">
             </picture>
@@ -137,6 +141,7 @@
         <div class="assortment__about">
           <p class="assortment__image">
             <picture>
+              <source srcset="img/buckwheat-small-desktop@1x.png" media="(min-width: 1300px)">
               <source srcset="img/buckwheat-small-tablet@1x.png" media="(min-width: 768px)">
               <img class="assortment__img assortment__img--small" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy со вкусом гречи 500 гр.">
             </picture>
@@ -163,6 +168,7 @@
         <div class="assortment__about">
           <p class="assortment__image">
             <picture>
+              <source srcset="img/buckwheat-big-desktop@1x.png" media="(min-width: 1300px)">
               <source srcset="img/buckwheat-big-tablet@1x.png" media="(min-width: 768px)">
               <img class="assortment__img assortment__img--big" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy со вкусом гречи 1000 гр.">
             </picture>
@@ -189,6 +195,7 @@
         <div class="assortment__about">
           <p class="assortment__image">
             <picture>
+              <source srcset="img/rice-small-desktop@1x.png" media="(min-width: 1300px)">
               <source srcset="img/rice-small-tablet@1x.png" media="(min-width: 768px)">
               <img class="assortment__img assortment__img--small" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy со вкусом риса 500 гр.">
             </picture>
@@ -222,43 +229,43 @@
   </section>
   <section class="extra">
     <div class="extra-goods">
-      <h2 class="extra-goods__title">Дополнительные товары</h2>
       <div class="extra-goods__list">
+        <h2 class="extra-goods__title">Дополнительные товары</h2>
         <div class="extra-goods__item">
           <h3 class="extra-goods__name">Сахарозаменитель</h3>
           <div class="extra-goods__row">
-            <div class="extra-goods__value">1 упоковка (100 г)</div>
-            <div class="extra-goods__value">200 Р.</div>
+            <p class="extra-goods__value">1 упоковка (100 г)</p>
+            <p class="extra-goods__value">200 Р.</p>
           </div>
           <button class="button extra-goods__button">Заказать</button>
         </div>
         <div class="extra-goods__item">
           <h3 class="extra-goods__name">питьевая вода</h3>
           <div class="extra-goods__row">
-            <div class="extra-goods__value">5 литров</div>
-            <div class="extra-goods__value">50 Р.</div>
+            <p class="extra-goods__value">5 литров</p>
+            <p class="extra-goods__value">50 Р.</p>
           </div>
           <button class="button extra-goods__button">Заказать</button>
         </div>
         <div class="extra-goods__item">
           <h3 class="extra-goods__name">молоко</h3>
           <div class="extra-goods__row">
-            <div class="extra-goods__value">1 литр</div>
-            <div class="extra-goods__value">100 Р.</div>
+            <p class="extra-goods__value">1 литр</p>
+            <p class="extra-goods__value">100 Р.</p>
           </div>
           <button class="button extra-goods__button">Заказать</button>
         </div>
         <div class="extra-goods__item">
           <h3 class="extra-goods__name">витамины</h3>
           <div class="extra-goods__row">
-            <div class="extra-goods__value">1 упоковка (30 г)</div>
-            <div class="extra-goods__value">300 Р.</div>
+            <p class="extra-goods__value">1 упоковка (30 г)</p>
+            <p class="extra-goods__value">300 Р.</p>
           </div>
           <button class="button extra-goods__button">Заказать</button>
         </div>
       </div>
       <div class="gift">
-        <p class="gift__content">Закажите все и получите чехол для кота в подарок!</p>
+        <p class="gift__content">Закажите все<br> и получите чехол для кота в подарок!</p>
       </div>
     </div>
   </section>
