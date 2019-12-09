@@ -33,4 +33,10 @@
     top: 15px;
     z-index: -1;
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 22px;
+    }
+  }
 }

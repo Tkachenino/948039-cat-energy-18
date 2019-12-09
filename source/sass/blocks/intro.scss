@@ -1,15 +1,18 @@
 .intro {
-  padding: 0 20px;
+  padding: 15px 20px 0;
 }
 
 .intro__title {
   margin: 0;
+  padding-bottom: 25px;
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
 }
 
 .intro__text {
+  margin: 0;
+  padding-right: 10px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -18,19 +21,27 @@
 @media (min-width: $tablet-width) {
   .intro {
     @include conteiner(708px);
-    padding: 0;
+    padding-top: 50px;
+  }
+
+  .intro__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 56px;
   }
 
   .intro__text {
     width: 50%;
     padding-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro {
     @include conteiner(1220px);
-    padding-top: 65px;
+    padding-top: 186px;
   }
 
   .intro__text {
