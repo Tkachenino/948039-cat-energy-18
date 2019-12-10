@@ -5,15 +5,33 @@
   text-align: center;
   vertical-align: middle;
   color: $white;
-  background-color: $green;
+  background-color: $link-hover;
   text-transform: uppercase;
   text-decoration: none;
   padding: 10px;
   box-sizing: border-box;
   border: none;
 
+  &:hover,
+  &:focus {
+    background-color: $button-focus;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+
   &--all-items {
     background-color: $gray;
     color: $shadow-gray;
+
+    &:hover,
+    &:focus {
+      background-color: $dark-gray;
+    }
+
+    &:active {
+      color: rgba($shadow-gray, 0.3);
+    }
   }
 }

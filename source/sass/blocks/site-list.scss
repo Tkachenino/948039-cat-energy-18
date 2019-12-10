@@ -29,8 +29,24 @@
   font-weight: normal;
   padding-bottom: 8px;
 
+  &:hover,
+  &:focus {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
   &--active {
     border-bottom: 1px solid $green;
+    color: $black;
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 100%;
+    }
   }
 }
 

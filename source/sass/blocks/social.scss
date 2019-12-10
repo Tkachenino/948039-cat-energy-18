@@ -26,6 +26,19 @@
   }
 }
 
+.social__icon {
+  fill: $link-static;
+}
+
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
+  fill: $link-hover;
+}
+
+.social__link:active .social__icon {
+  fill: $link-active;
+}
+
 @media (min-width: $tablet-width) {
   .social {
     border: none;
