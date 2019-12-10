@@ -21,7 +21,7 @@
 
   .content-section--gray {
     min-height: 1039px;
-    background: linear-gradient(to bottom, $white 620px, rgba($white, 0) 620px), linear-gradient(to right, $light-gray-bg 72.5%, $dark-gray-bg 72.5%);
+    background: linear-gradient(to bottom, $white 620px, rgba($white, 0) 620px), linear-gradient(to right, $light-gray-bg 50%, $dark-gray-bg 50%);
     border-top: 1px solid $gray;
   }
 
@@ -37,7 +37,7 @@
 
   .content-section--gray {
     min-height: 597px;
-    background: linear-gradient(to bottom, $white 168px, rgba($white, 0) 168px), linear-gradient(to right, $light-gray-bg 50%, $dark-gray-bg 50%);
+    background: linear-gradient(to bottom, $white 168px, rgba($white, 0) 168px), linear-gradient(to right, $light-gray-bg 72.5%, $dark-gray-bg 72.5%);
     border-top: none;
   }
 }
