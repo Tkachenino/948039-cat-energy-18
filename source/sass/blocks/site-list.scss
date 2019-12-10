@@ -38,6 +38,7 @@
   .site-list {
     display: flex;
     justify-items: center;
+    flex-wrap: wrap;
     justify-content: flex-end;
   }
 
@@ -46,8 +47,9 @@
     width: auto;
     height: auto;
     margin-left: 36px;
+    flex-grow: 1;
 
-    &:first-child {
+    &:nth-of-type(3n-2) {
       border-top: none;
       margin-left: 0;
     }
