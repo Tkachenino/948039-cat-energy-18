@@ -8,11 +8,22 @@
 
 .page-footer__logo {
   text-align: center;
-  padding: 20px 0;
+  padding: 38px 0 30px;
+}
+
+.page-footer__logo-link:focus img,
+.page-footer__logo-link:hover img {
+  opacity: 80%;
+}
+
+.page-footer__logo-link:active img {
+  opacity: 60%;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__box {
+    min-height: 143px;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;

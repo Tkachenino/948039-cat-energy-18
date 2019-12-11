@@ -2,7 +2,7 @@
   @include width-container;
   padding: 0;
   min-width: 320px;
-  min-height: 198px;
+  min-height: 65px;
   background-color: $white;
   display: flex;
   justify-content: space-between;
@@ -12,30 +12,56 @@
 
 .page-header__logo {
   box-sizing: border-box;
-  padding-top: 15px;
+  padding-top: 13px;
   padding-left: 20px;
   min-height: 65px;
   align-self: flex-start;
+}
+
+.page-header__logo-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header__logo:hover .page-header__logo-img,
+.page-header__logo:focus .page-header__logo-img {
+  opacity: 80%;
+}
+
+.page-header__logo:active .page-header__logo-img {
+  opacity: 60%;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     box-sizing: border-box;
     min-height: 65px;
+    padding-top: 25px;
     flex-direction: row;
     justify-content: space-between;
   }
 
   .page-header__logo {
-    padding-left: 0;
+    padding: 0;
+  }
+
+  .page-header__logo-img {
+    max-width: 173px;
+    height: 58px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
+    padding-top: 54px;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
     background-color: transparent;
+  }
+
+  .page-header__logo-img {
+    min-width: 202px;
+    height: 59px;
   }
 }

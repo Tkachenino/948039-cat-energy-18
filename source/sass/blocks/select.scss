@@ -1,35 +1,48 @@
 .select {
-  padding-top: 25px;
   text-align: center;
   color: $white;
-  background: url("../img/index-background-mobile1x.jpg") top center no-repeat, linear-gradient(to bottom, $green 305px, $white 305px);
+  background: url("../img/index-background-mobile1x.jpg") top center no-repeat, linear-gradient(to bottom, $green 306px, $white 306px);
 }
 
 .select__box {
   @include width-container;
+  padding-top: 26px;
 }
 
 .select__title {
-  padding: 0 20px 14px;
+  padding: 0;
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
+  margin: 0;
 }
 
 .select__slogan {
   padding: 0 20px;
+  margin: 26px 0 0;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
 }
 
+.select__picture {
+  margin: 28px 0 0;
+}
+
+.select__img {
+  width: 100%;
+  height: 100%;
+}
+
 .select__button {
-  margin: 20px auto 20px;
+  margin: 3px auto 23px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 @media (min-width: $tablet-width) {
   .select {
-    min-height: 835px;
+    min-height: 810px;
     padding-top: 50px;
     text-align: left;
     color: $black;
@@ -42,26 +55,35 @@
 
   .select__title {
     margin: 0;
-    padding: 0 0 40px;
+    padding: 0 0 15px;
     font-size: 60px;
     line-height: 60px;
   }
 
   .select__slogan {
+    font-size: 20px;
+    line-height: 20px;
     padding: 0;
   }
 
   .select__picture {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -8px);
     z-index: -1;
   }
 
+  .select__img {
+    width: 709px;
+    height: 609px;
+  }
+
   .select__button {
+    font-size: 20px;
+    line-height: 20px;
     padding-top: 15px;
     box-sizing: border-box;
-    margin: 20px 0 20px 0;
+    margin: 48px 0 20px 0;
     width: 245px;
     height: 52px;
   }
@@ -69,24 +91,38 @@
 
 @media (min-width: $desktop-width) {
   .select {
-    min-height: 647px;
+    padding-top: 173px;
+    min-height: 523px;
     background: url("../img/index-background-desktop@1x.jpg") top 0 left 100% no-repeat, linear-gradient(to left, $green 50%, $white 50%);
   }
 
   .select__box {
+    position: relative;
     margin-top: 50px;
   }
 
   .select__title {
-    width: 550px;
+    width: 50%;
     margin: 0;
+  }
+
+  .select__slogan {
+    width: 40%;
   }
 
   .select__picture {
     position: absolute;
-    top: 130px;
-    left: 60%;
-    transform: translateX(-50%);
+    top: -100px;
+    left: 766px;
     z-index: 1;
+  }
+
+  .select__img {
+    width: 552px;
+    height: 499px;
+  }
+
+  .select__button {
+    margin-top: 52px;
   }
 }

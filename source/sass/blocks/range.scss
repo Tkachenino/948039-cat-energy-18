@@ -1,0 +1,57 @@
+.range {
+  position: relative;
+  padding: 3px 5px;
+  width: 100%;
+  height: 14px;
+  background-color: $white;
+  border: 1px solid $shadow-gray;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.range__tools {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 50%;
+  height: 6px;
+  border-radius: 3px;
+  border: none;
+  background-color: $green;
+}
+
+@media (min-width: $tablet-width) {
+  .range {
+    width: 433px;
+    height: 6px;
+    border: none;
+    border-radius: 2.5px;
+    background-color: rgba($shadow-gray, 0.1);
+  }
+
+  .range__tools {
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-42%, -50%);
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid $shadow-gray;
+    background-color: $white;
+    position: absolute;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: $green;
+    }
+  }
+}
