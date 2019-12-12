@@ -29,7 +29,7 @@
     border: 1px solid $gray;
     border-left: none;
     border-right: none;
-    padding-top: 24px;
+    padding-top: 26px;
     padding-bottom: 18px;
     margin-bottom: 27px;
   }
@@ -66,9 +66,11 @@
 }
 
 .form__item {
+  box-sizing: border-box;
   display: flex;
   margin-bottom: 15px;
   align-items: baseline;
+  position: relative;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -120,7 +122,14 @@
       top: -5px;
       width: 30px;
       height: 30px;
-      border: 1px solid $gray;
+      border: 1px solid $border-gray;
+    }
+
+    &:focus,
+    &:hover {
+      &::before {
+        border: 1px solid $border-gray-black;
+      }
     }
   }
 }
@@ -135,11 +144,40 @@
   color: $shadow-gray;
 }
 
+.form__area-pic {
+  position: absolute;
+  top: 13px;
+  right: 16px;
+  width: 17px;
+  height: 13px;
+}
+
+.form__area:active + .form__area-pic svg,
+.form__area:focus + .form__area-pic svg {
+  fill: $link-hover;
+}
+
+.form__area:invalid + .form__area-pic svg {
+  fill: $error;
+}
+
 textarea.form__area {
   padding-right: 10px;
 }
 
 .form__area:disabled + .form__value--radio {
+  color: rgba($light-black, 0.3);
+
+  &::before {
+    border: 1px solid rgba($border-gray-black, 0.3);
+  }
+
+  &::after {
+    opacity: 30%;
+  }
+}
+
+.form__area:disabled + .form__value--checkbox {
   color: rgba($light-black, 0.3);
 
   &::before {
@@ -197,23 +235,6 @@ textarea {
   }
 }
 
-.form__item--mini-button {
-  position: relative;
-}
-
-.form__mini-button {
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  top: 0;
-  right: 0;
-  padding-top: 5px;
-  padding-right: 5px;
-  position: absolute;
-  width: 44px;
-  height: 44px;
-}
-
 .form__button {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -239,6 +260,10 @@ textarea {
     line-height: 36px;
     margin-left: -40px;
     padding: 0 40px;
+  }
+
+  .break-320px {
+    display: none;
   }
 
   .form__list {
@@ -271,6 +296,7 @@ textarea {
   }
 
   .form__item {
+    box-sizing: border-box;
     margin-bottom: 20px;
   }
 
@@ -317,6 +343,11 @@ textarea {
     font-size: 20px;
     line-height: 20px;
     padding: 11px 40px 10px 21px;
+  }
+
+  .form__area-pic {
+    top: 19px;
+    right: 17px;
   }
 
   textarea.form__area {

@@ -13,11 +13,12 @@
   position: absolute;
   top: 3px;
   left: 5px;
-  width: 50%;
+  width: 45%;
   height: 6px;
   border-radius: 3px;
   border: none;
   background-color: $green;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {

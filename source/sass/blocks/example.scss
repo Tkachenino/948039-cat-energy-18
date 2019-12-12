@@ -99,6 +99,7 @@
   line-height: 20px;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 }
 
 .example__range-row {
@@ -147,6 +148,7 @@
 
   .example__cost-block {
     width: 175px;
+    margin: 0;
     height: 60px;
     padding: 42px 0 0;
     justify-content: flex-end;
@@ -198,7 +200,7 @@
     justify-content: space-between;
     padding: 0 30px;
     margin-top: 75px;
-    min-height: 536px;
+    min-height: 463px;
     background: linear-gradient(to right, $light-gray-bg 976px, $dark-gray-bg 976px);
   }
 
