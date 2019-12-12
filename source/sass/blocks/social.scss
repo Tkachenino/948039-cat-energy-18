@@ -33,10 +33,12 @@
 .social__link:hover .social__icon,
 .social__link:focus .social__icon {
   fill: $link-hover;
+  transition: 0.3s;
 }
 
 .social__link:active .social__icon {
   fill: $link-active;
+  transition: 0.3s;
 }
 
 @media (min-width: $tablet-width) {

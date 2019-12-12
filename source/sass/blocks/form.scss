@@ -82,11 +82,19 @@
   text-transform: uppercase;
   white-space: nowrap;
   margin-right: 16px;
+  cursor: pointer;
 
   &--radio {
     padding-left: 45px;
     margin-bottom: 10px;
     position: relative;
+
+    &:hover,
+    &:focus {
+      &::before {
+        border: 1px solid $border-gray-black;
+      }
+    }
 
     &::before {
       content: "";
@@ -96,7 +104,7 @@
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      border: 1px solid $gray;
+      border: 1px solid $border-gray;
     }
   }
 
@@ -131,6 +139,18 @@ textarea.form__area {
   padding-right: 10px;
 }
 
+.form__area:disabled + .form__value--radio {
+  color: rgba($light-black, 0.3);
+
+  &::before {
+    border: 1px solid rgba($border-gray-black, 0.3);
+  }
+
+  &::after {
+    opacity: 30%;
+  }
+}
+
 .form__area:checked + .form__value--radio::after {
   content: "";
   position: absolute;
@@ -158,8 +178,23 @@ input[type="tel"],
 textarea {
   width: 100%;
   box-sizing: border-box;
-  flex-grow: 2;
-  border: 1px solid $gray;
+  flex-grow: 1;
+  border: 1px solid rgba($border-gray, 0.5);
+  outline: none;
+
+  &:hover {
+    border: 1px solid rgba($border-gray, 1);
+  }
+
+  &:focus,
+  &:active {
+    border: 2px solid rgba($shadow-gray, 1);
+  }
+
+  &:invalid,
+  &:required + :empty {
+    border: 2px solid rgba($error, 1);
+  }
 }
 
 .form__item--mini-button {
@@ -167,6 +202,7 @@ textarea {
 }
 
 .form__mini-button {
+  cursor: pointer;
   background-color: transparent;
   border: none;
   top: 0;
@@ -266,7 +302,7 @@ textarea {
   }
 
   .form__area:checked + .form__value--radio::after {
-    left: 13px;
+    left: 12px;
     top: 1px;
     width: 18px;
     height: 18px;

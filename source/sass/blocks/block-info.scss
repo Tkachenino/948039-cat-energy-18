@@ -71,6 +71,11 @@
   position: relative;
   padding-right: 35px;
 
+  &:active {
+    opacity: 30%;
+    transition: 0.3s;
+  }
+
   &::after {
     content: url("../img/icon-right-arrow-long.svg");
     width: 24px;
@@ -79,6 +84,16 @@
     right: 0;
     top: 55%;
     transform: translateY(-100%);
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      content: url("../img/icon-right-arrow-verylong.svg");
+      width: 33px;
+      transition: 0.1s;
+      transform: translateY(-135%);
+    }
   }
 }
 

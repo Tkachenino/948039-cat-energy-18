@@ -34,8 +34,8 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
-  border: 1px solid $shadow-gray;
-  border-radius: 2px;
+  border: 1px solid $border-gray;
+  border-radius: 4px;
   width: 124px;
   min-height: 56px;
   box-sizing: border-box;
@@ -60,7 +60,7 @@
 
 .example__cost-block {
   width: 190px;
-  padding: 0 45px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
 }
@@ -91,11 +91,14 @@
 }
 
 .example__range-text {
+  font-family: "Oswald", "Arial", sans-serif;
+  background-color: transparent;
   margin: 0;
-  padding-bottom: 20px;
+  padding: 0 0 20px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  border: none;
 }
 
 .example__range-row {
@@ -179,7 +182,13 @@
     font-size: 20px;
     padding-top: 8px;
     padding-bottom: 6px;
-    border-bottom: 1px dotted $shadow-gray;
+    border-bottom: 1px dotted $border-gray;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid rgba($black, 0.4);
+      transition: 0.3s;
+    }
   }
 }
 
