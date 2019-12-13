@@ -58,6 +58,10 @@
   box-sizing: border-box;
 }
 
+.break-768 {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .advantage {
     min-height: 600px;
@@ -122,6 +126,10 @@
     width: 250px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .break-768 {
+    display: block;
   }
 }
 

@@ -11,14 +11,17 @@
 .copyright__link:hover .copyright__img,
 .copyright__link:focus .copyright__img {
   fill: $link-hover;
+  transition: 0.3s;
 }
 
 .copyright__link:active .copyright__img {
   fill: $link-active;
+  transition: 0.3s;
 }
 
 .copyright__link:active .copyright__text {
   color: rgba($shadow-gray, 0.3);
+  transition: 0.3s;
 }
 
 .copyright__text {

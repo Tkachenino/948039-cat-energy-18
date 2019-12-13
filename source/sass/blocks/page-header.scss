@@ -26,10 +26,13 @@
 .page-header__logo:hover .page-header__logo-img,
 .page-header__logo:focus .page-header__logo-img {
   opacity: 80%;
+  cursor: pointer;
+  transition-duration: 0.3s;
 }
 
 .page-header__logo:active .page-header__logo-img {
   opacity: 60%;
+  transition: 0.3s;
 }
 
 @media (min-width: $tablet-width) {

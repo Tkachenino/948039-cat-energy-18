@@ -11,14 +11,17 @@
   padding: 10px;
   box-sizing: border-box;
   border: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {
     background-color: $button-focus;
+    transition: 0.3s;
   }
 
   &:active {
     color: rgba($white, 0.3);
+    transition: 0.3s;
   }
 
   &--all-items {
@@ -28,10 +31,12 @@
     &:hover,
     &:focus {
       background-color: $dark-gray;
+      transition: 0.3s;
     }
 
     &:active {
       color: rgba($shadow-gray, 0.3);
+      transition: 0.3s;
     }
   }
 }
