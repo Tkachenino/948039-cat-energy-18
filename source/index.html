@@ -16,7 +16,7 @@
     </picture>
   </a>
   <button class="main-nav__toggle" type="button" aria-label="Главное меню"><img src="img/icon-mobile-menu.svg" width="24" height="18" alt="Главное меню"></button>
-  <nav class="main-nav visually-hidden">
+  <nav class="main-nav">
     <ul class="main-nav__list site-list site-list--desktop">
       <li class="site-list__item"><a class="site-list__item-link site-list__item-link--active" href="#">Главная</a></li>
       <li class="site-list__item"><a class="site-list__item-link" href="catalog.html">Каталог продукции</a></li>
@@ -106,10 +106,22 @@
         </div>
       </div>
       <div class="example__picture">
-        <picture>
-          <source srcset="img/before-tablet@1x.png" media="(min-width: 768px)">
-          <img class="example__img" src="img/before-mobile@1x.png" width="320" height="240" alt="Результаты влияния питания для кота">
-        </picture>
+        <div class="slider">
+          <div class="slider__item slider__item--before">
+            <picture>
+              <source srcset="img/before-desktop@1x.png" media="(min-width: 1300px)">
+              <source srcset="img/before-tablet@1x.png" media="(min-width: 768px)">
+              <img class="slider__img slider__img--before" src="img/before-mobile@1x.png" width="320" height="240" alt="Результаты влияния питания для кота">
+            </picture>
+          </div>
+          <div class="slider__item slider__item--after">
+            <picture>
+              <source srcset="img/after-desktop@1x.png" media="(min-width: 1300px)">
+              <source srcset="img/after-tablet@1x.png" media="(min-width: 768px)">
+              <img class="slider__img slider__img--after" src="img/after-mobile@1x.png" width="320" height="240" alt="Результаты влияния питания для кота">
+            </picture>
+          </div>
+        </div>
         <div class="example__range">
           <button class="example__range-text" type="button">было</button>
           <div class="example__range-row range">

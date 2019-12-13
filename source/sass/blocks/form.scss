@@ -46,7 +46,7 @@
 
   &--extra {
     padding-top: 40px;
-    padding-bottom: 25px;
+    padding-bottom: 29px;
   }
 
   &--button {
@@ -68,7 +68,7 @@
 .form__item {
   box-sizing: border-box;
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   align-items: baseline;
   position: relative;
 
@@ -101,8 +101,8 @@
     &::before {
       content: "";
       position: absolute;
-      left: 0;
-      top: -5px;
+      left: -1px;
+      top: -6px;
       width: 30px;
       height: 30px;
       border-radius: 50%;
@@ -163,6 +163,7 @@
 
 textarea.form__area {
   padding-right: 10px;
+  height: 150px;
 }
 
 .form__area:disabled + .form__value--radio {
@@ -192,8 +193,8 @@ textarea.form__area {
 .form__area:checked + .form__value--radio::after {
   content: "";
   position: absolute;
-  left: 10px;
-  top: 5px;
+  left: 9px;
+  top: 3px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -208,6 +209,12 @@ textarea.form__area {
   width: 21px;
   height: 16px;
   background: url("../img/icon-tick.svg");
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  height: 45px;
 }
 
 input[type="text"],
@@ -273,17 +280,17 @@ textarea {
 
     &--radio {
       border: 1px solid $gray;
-      margin-top: 28px;
+      margin-top: 30px;
       margin-bottom: 75px;
       padding: 34px 27px 21px;
     }
 
     &--contacts {
-      padding: 75px 0 64px;
+      padding: 75px 0 67px;
     }
 
     &--comments {
-      padding: 75px 0 72px;
+      padding: 76px 0 64px;
     }
 
     &--extra {
@@ -350,8 +357,15 @@ textarea {
     right: 17px;
   }
 
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    height: 52px;
+  }
+
   textarea.form__area {
     padding-top: 15px;
+    height: 174px;
   }
 
   .form__mini-button {
@@ -399,7 +413,7 @@ textarea {
     }
 
     &--comments {
-      padding-bottom: 74px;
+      padding-bottom: 67px;
     }
 
     &--button {
