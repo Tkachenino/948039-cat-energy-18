@@ -89,10 +89,10 @@
   &:hover,
   &:focus {
     &::after {
-      content: url("../img/icon-right-arrow-verylong.svg");
       width: 33px;
-      transition: 0.1s;
-      transform: translateY(-135%);
+      transition: 0.2s;
+      transform: translate(9px, -135%);
+      content: url("../img/icon-right-arrow-verylong.svg");
     }
   }
 }
