@@ -95,6 +95,8 @@
     min-height: 523px;
     background: linear-gradient(to left, $green 50%, $white 50%);
     position: relative;
+    z-index: -1;
+    overflow-y: hidden;
 
     &::after {
       content: url("../img/index-background-desktop@1x.jpg");
