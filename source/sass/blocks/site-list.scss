@@ -31,12 +31,12 @@
 
   &:hover,
   &:focus {
-    opacity: 60%;
+    opacity: 0.6;
     transition: 0.3s;
   }
 
   &:active {
-    opacity: 30%;
+    opacity: 0.3;
   }
 
   &--active {
@@ -46,7 +46,7 @@
     &:hover,
     &:focus,
     &:active {
-      opacity: 100%;
+      opacity: 1;
     }
   }
 }
