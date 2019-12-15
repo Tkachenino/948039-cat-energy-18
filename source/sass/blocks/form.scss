@@ -12,6 +12,10 @@
 .form__container {
   @include width-container;
   padding: 0;
+
+  &--noname {
+    padding-bottom: 27px;
+  }
 }
 
 .form__list {
@@ -31,7 +35,6 @@
     border-right: none;
     padding-top: 26px;
     padding-bottom: 18px;
-    margin-bottom: 27px;
   }
 
   &--contacts {
@@ -260,6 +263,11 @@ textarea {
 @media (min-width: $tablet-width) {
   .form__container {
     padding: 0 69px;
+
+    &--noname {
+      padding-top: 23px;
+      padding-bottom: 50px;
+    }
   }
 
   .form__legend {
@@ -275,13 +283,13 @@ textarea {
 
   .form__list {
     &--general {
-      padding: 43px 0 43px;
+      padding: 20px 0 43px;
     }
 
     &--radio {
       border: 1px solid $gray;
       margin-top: 30px;
-      margin-bottom: 75px;
+      margin-bottom: 25px;
       padding: 34px 27px 21px;
     }
 
@@ -400,12 +408,21 @@ textarea {
 @media (min-width: $desktop-width) {
   .form__container {
     padding: 0 40px;
+
+    &--noname {
+      padding-top: 27px;
+      padding-bottom: 50px;
+    }
   }
 
   .form__list {
+    &--general {
+      padding: 0;
+      margin: 20px 0;
+    }
+
     &--radio {
-      margin-top: 47px;
-      margin-bottom: 69px;
+      margin: 20px 0;
     }
 
     &--contacts {
@@ -425,6 +442,7 @@ textarea {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: stretch;
   }
 
   .form__col-desk-item {
