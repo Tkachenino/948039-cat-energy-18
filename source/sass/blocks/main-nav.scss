@@ -3,6 +3,10 @@
   width: 100%;
   position: relative;
   margin: 0;
+
+  &--off {
+    display: none;
+  }
 }
 
 .main-nav__toggle {
