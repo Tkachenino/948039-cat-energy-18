@@ -35,14 +35,13 @@
       position: relative;
 
       &::before {
-        content: "";
+        content: url("../img/icon-plus-mobile.svg");
         position: absolute;
         width: 30px;
         height: 30px;
         top: 27px;
         left: 50%;
         transform: translateX(-50%);
-        background: url("../img/icon-plus.svg");
       }
     }
 
@@ -147,9 +146,12 @@
         padding: 0 40px;
 
         &::before {
+          content: "";
           width: 60px;
           height: 60px;
           top: -109px;
+          background: url("../img/icon-plus.svg");
+          opacity: 0.2;
         }
       }
 
@@ -235,12 +237,6 @@
     &:last-of-type {
       & .assortment__title {
         padding: 0 10px;
-
-        &::before {
-          width: 60px;
-          height: 60px;
-          top: -109px;
-        }
       }
 
       & .assortment__value {

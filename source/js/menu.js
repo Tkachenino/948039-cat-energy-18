@@ -11,7 +11,7 @@ var closeMenu = function () {
 };
 
 var checkMenuStatus = function () {
-  if (window.innerWidth > breackpoint) {
+  if (window.innerWidth >= breackpoint) {
     openMenu();
   }
   else {

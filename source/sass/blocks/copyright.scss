@@ -1,5 +1,5 @@
 .copyright {
-  padding: 13px 0;
+  padding: 15px 0;
 }
 
 .copyright__link {
@@ -41,6 +41,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .copyright {
+    padding: 48px 0;
+  }
+
   .copyright__link {
     width: 163px;
   }
