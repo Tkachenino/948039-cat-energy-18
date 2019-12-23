@@ -3,14 +3,69 @@
   width: 100%;
   position: relative;
   margin: 0;
+
+  &--off {
+    display: none;
+  }
 }
 
 .main-nav__toggle {
   padding: 0;
   width: 24px;
+  height: 18px;
   margin-right: 20px;
   border: none;
   background-color: transparent;
+  position: relative;
+
+  &--close {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: $black;
+      box-shadow: 0 8px 0 0 $black;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: $black;
+    }
+  }
+
+  &--open {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: $black;
+      transform-origin: top left;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: $black;
+      transform-origin: bottom left;
+      transform: rotate(-45deg);
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
