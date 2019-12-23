@@ -24,13 +24,13 @@ gulp.task("css", function () {
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -38,8 +38,14 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
+  gulp.watch("source/img/icon-inline-*.svg", gulp.series("sprite", "refresh"));
   gulp.watch("source/*.html").on("change", server.reload);
   gulp.watch("source/js/*.js").on("change", server.reload);
+});
+
+gulp.task("refresh", function (done) {
+  server.reload();
+  done();
 });
 
 gulp.task("start", gulp.series("css", "server"));
@@ -66,7 +72,7 @@ gulp.task("sprite", function () {
       inLineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("clean", function () {
@@ -85,5 +91,10 @@ gulp.task("copy", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("build", gulp.series("css", "sprite"));
+gulp.task("build", gulp.series(
+  "clean",
+  "copy",
+  "css",
+  "sprite"
+));
 gulp.task("start", gulp.series("build", "server"));
