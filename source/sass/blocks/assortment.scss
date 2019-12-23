@@ -168,21 +168,21 @@
     align-items: center;
   }
 
-  .assortment__image {
-    position: absolute;
-    left: 0;
-    bottom: 303px;
-  }
-
   .assortment__img {
     &--small {
       width: 324px;
       height: 172px;
+      position: absolute;
+      left: 0;
+      top: -47px;
     }
 
     &--big {
       width: 324px;
       height: 208px;
+      position: absolute;
+      left: 0;
+      top: -83px;
     }
   }
 
@@ -244,10 +244,6 @@
         padding: 25px 0 0;
       }
     }
-  }
-
-  .assortment__image {
-    bottom: 302px;
   }
 
   .assortment__img {

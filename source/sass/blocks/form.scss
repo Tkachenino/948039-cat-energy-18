@@ -308,11 +308,29 @@ textarea {
     &--button {
       padding: 3px 0 56px;
     }
+
+    &--col-tablet {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
   }
 
   .form__item {
     box-sizing: border-box;
     margin-bottom: 20px;
+
+    &--col-tablet-2x {
+      width: calc(100% / 2 - 30px);
+    }
+  }
+
+  .form__item-block {
+    &--col-tablet {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
   }
 
   .form__value {
@@ -386,22 +404,20 @@ textarea {
   .form__button {
     height: 52px;
     font-size: 20px;
+
+    &--col-tablet-2x {
+      width: calc(100% / 2 - 30px);
+    }
   }
 
   .form__small {
     font-size: 16px;
     text-align: left;
     margin: 18px 0 11px;
-  }
 
-  .form__col-tablet {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .form__col-tablet-item {
-    width: calc(100% / 2 - 30px);
+    &--col-tablet-2x {
+      width: calc(100% / 2 - 30px);
+    }
   }
 }
 
@@ -412,6 +428,13 @@ textarea {
     &--noname {
       padding-top: 27px;
       padding-bottom: 50px;
+    }
+
+    &--col-desk {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: stretch;
     }
   }
 
@@ -436,22 +459,40 @@ textarea {
     &--button {
       padding: 9px 0 66px;
     }
+
+    &--col-desk-2x {
+      width: calc(50% - 40px);
+    }
   }
 
-  .form__col-desk {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: stretch;
-  }
-
-  .form__col-desk-item {
-    &--2col {
+  .form__item {
+    &--col-desk-2x {
       width: calc(50% - 40px);
     }
 
-    &--4col {
+    &--col-desk-4x {
       width: calc(25% - 60px);
+    }
+  }
+
+  .form__item-block {
+    &--col-desk {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: stretch;
+    }
+  }
+
+  .form__button {
+    &--col-desk-2x {
+      width: calc(50% - 40px);
+    }
+  }
+
+  .form__small {
+    &--col-desk-2x {
+      width: calc(50% - 40px);
     }
   }
 }
