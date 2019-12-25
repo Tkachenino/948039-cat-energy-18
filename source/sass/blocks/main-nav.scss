@@ -10,6 +10,7 @@
 }
 
 .main-nav__toggle {
+  display: none;
   padding: 0;
   width: 24px;
   height: 18px;
@@ -19,6 +20,8 @@
   position: relative;
 
   &--close {
+    display: block;
+
     &::before {
       content: "";
       position: absolute;
@@ -42,6 +45,8 @@
   }
 
   &--open {
+    display: block;
+
     &::before {
       content: "";
       position: absolute;
