@@ -22,10 +22,10 @@
 .example__result-block {
   display: flex;
   justify-content: space-between;
+}
 
-  &--mini {
-    position: relative;
-  }
+.example__result-wrapper {
+  position: relative;
 }
 
 .example__value {
@@ -187,7 +187,6 @@
     font-size: 20px;
     text-align: right;
   }
-
 
   .example__range {
     min-height: auto;

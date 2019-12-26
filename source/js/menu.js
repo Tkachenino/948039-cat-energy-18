@@ -1,4 +1,4 @@
-var switchbtn = document.querySelector(".main-nav__toggle");
+var switchbtn = document.querySelector(".page-header__toggle");
 var menu = document.querySelector(".main-nav");
 var breackpoint = 768;
 
@@ -21,12 +21,12 @@ var checkMenuStatus = function () {
 
 var checkBtnStatus = function () {
   if (menu.classList.contains("main-nav--off")) {
-    switchbtn.classList.add("main-nav__toggle--close");
-    switchbtn.classList.remove("main-nav__toggle--open");
+    switchbtn.classList.add("page-header__toggle--close");
+    switchbtn.classList.remove("page-header__toggle--open");
   }
   else {
-    switchbtn.classList.remove("main-nav__toggle--close");
-    switchbtn.classList.add("main-nav__toggle--open");
+    switchbtn.classList.remove("page-header__toggle--close");
+    switchbtn.classList.add("page-header__toggle--open");
   }
 };
 
@@ -38,13 +38,13 @@ switchbtn.addEventListener("click", function (evt) {
   evt.preventDefault();
   if (!menu.classList.contains("main-nav--off")) {
     closeMenu();
-    switchbtn.classList.remove("main-nav__toggle--open");
-    switchbtn.classList.add("main-nav__toggle--close");
+    switchbtn.classList.remove("page-header__toggle--open");
+    switchbtn.classList.add("page-header__toggle--close");
   }
   else {
     openMenu();
-    switchbtn.classList.remove("main-nav__toggle--close");
-    switchbtn.classList.add("main-nav__toggle--open");
+    switchbtn.classList.remove("page-header__toggle--close");
+    switchbtn.classList.add("page-header__toggle--open");
   }
 });
 
